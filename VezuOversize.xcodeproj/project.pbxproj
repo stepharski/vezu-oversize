@@ -9,18 +9,49 @@
 /* Begin PBXBuildFile section */
 		5FA986923074598A004F6C65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FA9868E3074598A004F6C65 /* Assets.xcassets */; };
 		5FA986943074598A004F6C65 /* VezuOversizeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA986903074598A004F6C65 /* VezuOversizeApp.swift */; };
+		5FA9869C30758040004F6C65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FA9869B30758040004F6C65 /* LaunchScreen.storyboard */; };
+		5FA986A53075A160004F6C65 /* SwiftUIPocketKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5FA986A43075A160004F6C65 /* SwiftUIPocketKit */; };
+		5FA986A93075A1E1004F6C65 /* Color+Scheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA986A83075A1E1004F6C65 /* Color+Scheme.swift */; };
+		5FA986AD3075A68E004F6C65 /* AppBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA986AC3075A68E004F6C65 /* AppBackgroundView.swift */; };
+		5FA986B23075AF50004F6C65 /* PermitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA986B13075AF50004F6C65 /* PermitsView.swift */; };
+		5FA986B43075AF58004F6C65 /* PermitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA986B33075AF58004F6C65 /* PermitsViewModel.swift */; };
+		5FA986B73075BB73004F6C65 /* AppText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA986B63075BB73004F6C65 /* AppText.swift */; };
+		5FA986B93075BFBB004F6C65 /* PermitFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA986B83075BFBB004F6C65 /* PermitFilter.swift */; };
+		5FA986BB307981D4004F6C65 /* PermitStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA986BA307981D4004F6C65 /* PermitStatus.swift */; };
+		5FA986BE30798244004F6C65 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA986BD30798244004F6C65 /* MainTabView.swift */; };
+		A20000000000000000000001 /* Permit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000001 /* Permit.swift */; };
+		A20000000000000000000002 /* PermitsFilterPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000002 /* PermitsFilterPicker.swift */; };
+		A20000000000000000000003 /* PermitRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000003 /* PermitRowView.swift */; };
+		A20000000000000000000004 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000004 /* InfoView.swift */; };
+		A20000000000000000000005 /* PermitsEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000005 /* PermitsEmptyStateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5FA9868030745982004F6C65 /* VezuOversize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VezuOversize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FA9868E3074598A004F6C65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FA986903074598A004F6C65 /* VezuOversizeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VezuOversizeApp.swift; sourceTree = "<group>"; };
+		5FA9869B30758040004F6C65 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5FA9869D307587C5004F6C65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FA986A83075A1E1004F6C65 /* Color+Scheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Scheme.swift"; sourceTree = "<group>"; };
+		5FA986AC3075A68E004F6C65 /* AppBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBackgroundView.swift; sourceTree = "<group>"; };
+		5FA986B13075AF50004F6C65 /* PermitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitsView.swift; sourceTree = "<group>"; };
+		5FA986B33075AF58004F6C65 /* PermitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitsViewModel.swift; sourceTree = "<group>"; };
+		5FA986B63075BB73004F6C65 /* AppText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppText.swift; sourceTree = "<group>"; };
+		5FA986B83075BFBB004F6C65 /* PermitFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitFilter.swift; sourceTree = "<group>"; };
+		5FA986BA307981D4004F6C65 /* PermitStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitStatus.swift; sourceTree = "<group>"; };
+		5FA986BD30798244004F6C65 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		A10000000000000000000001 /* Permit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permit.swift; sourceTree = "<group>"; };
+		A10000000000000000000002 /* PermitsFilterPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitsFilterPicker.swift; sourceTree = "<group>"; };
+		A10000000000000000000003 /* PermitRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitRowView.swift; sourceTree = "<group>"; };
+		A10000000000000000000004 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		A10000000000000000000005 /* PermitsEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitsEmptyStateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5FA9867D30745982004F6C65 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
+				5FA986A53075A160004F6C65 /* SwiftUIPocketKit in Frameworks */,
 			);
 		};
 /* End PBXFrameworksBuildPhase section */
@@ -58,7 +89,9 @@
 		5FA9869530745A42004F6C65 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5FA9869D307587C5004F6C65 /* Info.plist */,
 				5FA9868E3074598A004F6C65 /* Assets.xcassets */,
+				5FA9869B30758040004F6C65 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -66,6 +99,9 @@
 		5FA9869630745A49004F6C65 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A10000000000000000000001 /* Permit.swift */,
+				5FA986B83075BFBB004F6C65 /* PermitFilter.swift */,
+				5FA986BA307981D4004F6C65 /* PermitStatus.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -80,6 +116,8 @@
 		5FA9869830745A53004F6C65 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				5FA986B53075BB6B004F6C65 /* Constants */,
+				5FA986A63075A178004F6C65 /* Design */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -87,6 +125,9 @@
 		5FA9869930745A59004F6C65 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				5FA986BC30798234004F6C65 /* MainTabBar */,
+				5FA986AE3075AF2B004F6C65 /* Permits */,
+				A30000000000000000000001 /* Info */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -97,6 +138,75 @@
 				5FA986903074598A004F6C65 /* VezuOversizeApp.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		5FA986A63075A178004F6C65 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				5FA986A83075A1E1004F6C65 /* Color+Scheme.swift */,
+				5FA986AC3075A68E004F6C65 /* AppBackgroundView.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		5FA986AE3075AF2B004F6C65 /* Permits */ = {
+			isa = PBXGroup;
+			children = (
+				5FA986B03075AF39004F6C65 /* Views */,
+				5FA986AF3075AF33004F6C65 /* ViewModels */,
+			);
+			path = Permits;
+			sourceTree = "<group>";
+		};
+		5FA986AF3075AF33004F6C65 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5FA986B33075AF58004F6C65 /* PermitsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		5FA986B03075AF39004F6C65 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5FA986B13075AF50004F6C65 /* PermitsView.swift */,
+				A10000000000000000000003 /* PermitRowView.swift */,
+				A10000000000000000000002 /* PermitsFilterPicker.swift */,
+				A10000000000000000000005 /* PermitsEmptyStateView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5FA986B53075BB6B004F6C65 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				5FA986B63075BB73004F6C65 /* AppText.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		5FA986BC30798234004F6C65 /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				5FA986BD30798244004F6C65 /* MainTabView.swift */,
+			);
+			path = MainTabBar;
+			sourceTree = "<group>";
+		};
+		A30000000000000000000001 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				A30000000000000000000002 /* Views */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		A30000000000000000000002 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000004 /* InfoView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,6 +223,9 @@
 			buildRules = (
 			);
 			name = VezuOversize;
+			packageProductDependencies = (
+				5FA986A43075A160004F6C65 /* SwiftUIPocketKit */,
+			);
 			productName = VezuOversize;
 			productReference = 5FA9868030745982004F6C65 /* VezuOversize.app */;
 			productType = "com.apple.product-type.application";
@@ -141,6 +254,9 @@
 			);
 			mainGroup = 5FA9867730745982004F6C65;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5FA986A33075A160004F6C65 /* XCRemoteSwiftPackageReference "SwiftUIPocketKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 5FA9868130745982004F6C65 /* Products */;
 			projectDirPath = "";
@@ -156,6 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			files = (
 				5FA986923074598A004F6C65 /* Assets.xcassets in Resources */,
+				5FA9869C30758040004F6C65 /* LaunchScreen.storyboard in Resources */,
 			);
 		};
 /* End PBXResourcesBuildPhase section */
@@ -164,7 +281,20 @@
 		5FA9867C30745982004F6C65 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
+				A20000000000000000000005 /* PermitsEmptyStateView.swift in Sources */,
+				A20000000000000000000001 /* Permit.swift in Sources */,
+				A20000000000000000000002 /* PermitsFilterPicker.swift in Sources */,
+				5FA986B73075BB73004F6C65 /* AppText.swift in Sources */,
+				5FA986B93075BFBB004F6C65 /* PermitFilter.swift in Sources */,
+				A20000000000000000000003 /* PermitRowView.swift in Sources */,
+				A20000000000000000000004 /* InfoView.swift in Sources */,
 				5FA986943074598A004F6C65 /* VezuOversizeApp.swift in Sources */,
+				5FA986A93075A1E1004F6C65 /* Color+Scheme.swift in Sources */,
+				5FA986AD3075A68E004F6C65 /* AppBackgroundView.swift in Sources */,
+				5FA986B23075AF50004F6C65 /* PermitsView.swift in Sources */,
+				5FA986BE30798244004F6C65 /* MainTabView.swift in Sources */,
+				5FA986BB307981D4004F6C65 /* PermitStatus.swift in Sources */,
+				5FA986B43075AF58004F6C65 /* PermitsViewModel.swift in Sources */,
 			);
 		};
 /* End PBXSourcesBuildPhase section */
@@ -298,11 +428,16 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VezuOversize/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = VEZU;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,12 +446,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.stepharski.VezuOversize;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -329,11 +468,16 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VezuOversize/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = VEZU;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -342,12 +486,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.stepharski.VezuOversize;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -371,6 +519,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5FA986A33075A160004F6C65 /* XCRemoteSwiftPackageReference "SwiftUIPocketKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stepharski/SwiftUIPocketKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5FA986A43075A160004F6C65 /* SwiftUIPocketKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5FA986A33075A160004F6C65 /* XCRemoteSwiftPackageReference "SwiftUIPocketKit" */;
+			productName = SwiftUIPocketKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5FA9867830745982004F6C65 /* Project object */;
 	validationLevel = 1;
