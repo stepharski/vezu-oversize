@@ -24,6 +24,32 @@
 		A20000000000000000000003 /* PermitRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000003 /* PermitRowView.swift */; };
 		A20000000000000000000004 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000004 /* InfoView.swift */; };
 		A20000000000000000000005 /* PermitsEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000005 /* PermitsEmptyStateView.swift */; };
+		A20000000000000000000006 /* PermitBrief.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000006 /* PermitBrief.swift */; };
+		A20000000000000000000007 /* PermitBriefViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000007 /* PermitBriefViewModel.swift */; };
+		A20000000000000000000008 /* PermitBriefView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000008 /* PermitBriefView.swift */; };
+		A20000000000000000000009 /* PermitSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000009 /* PermitSummaryCell.swift */; };
+		A2000000000000000000000A /* PermitStatusBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000000000000000000000A /* PermitStatusBadge.swift */; };
+		A20000000000000000000010 /* BriefSectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000010 /* BriefSectionCell.swift */; };
+		A20000000000000000000011 /* KeyRestrictionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000011 /* KeyRestrictionsCell.swift */; };
+		A20000000000000000000012 /* EscortRequirementsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000012 /* EscortRequirementsCell.swift */; };
+		A20000000000000000000013 /* LoadInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000013 /* LoadInfoCell.swift */; };
+		A20000000000000000000014 /* VehicleInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000014 /* VehicleInfoCell.swift */; };
+		A20000000000000000000015 /* PermitFeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000015 /* PermitFeeCell.swift */; };
+		A20000000000000000000020 /* AlertsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000020 /* AlertsCell.swift */; };
+		A20000000000000000000021 /* RouteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000021 /* RouteCell.swift */; };
+		A20000000000000000000022 /* RequiredEquipmentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000022 /* RequiredEquipmentCell.swift */; };
+		A20000000000000000000023 /* DocumentsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000023 /* DocumentsCell.swift */; };
+		A20000000000000000000024 /* ContactsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000024 /* ContactsCell.swift */; };
+		A20000000000000000000030 /* RouteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000030 /* RouteDetailView.swift */; };
+		A20000000000000000000031 /* Double+Miles.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000031 /* Double+Miles.swift */; };
+		A20000000000000000000032 /* RouteOverviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000032 /* RouteOverviewCell.swift */; };
+		A20000000000000000000033 /* ProhibitedRoadsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000033 /* ProhibitedRoadsCell.swift */; };
+		A20000000000000000000034 /* RouteDirectionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000034 /* RouteDirectionsCell.swift */; };
+		A20000000000000000000040 /* BriefInfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000040 /* BriefInfoRow.swift */; };
+		A20000000000000000000041 /* BriefItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000041 /* BriefItemRow.swift */; };
+		A20000000000000000000042 /* BriefIconRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000042 /* BriefIconRow.swift */; };
+		A20000000000000000000043 /* Date+Range.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000043 /* Date+Range.swift */; };
+		A20000000000000000000044 /* View+Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000044 /* View+Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +71,32 @@
 		A10000000000000000000003 /* PermitRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitRowView.swift; sourceTree = "<group>"; };
 		A10000000000000000000004 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		A10000000000000000000005 /* PermitsEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitsEmptyStateView.swift; sourceTree = "<group>"; };
+		A10000000000000000000006 /* PermitBrief.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitBrief.swift; sourceTree = "<group>"; };
+		A10000000000000000000007 /* PermitBriefViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitBriefViewModel.swift; sourceTree = "<group>"; };
+		A10000000000000000000008 /* PermitBriefView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitBriefView.swift; sourceTree = "<group>"; };
+		A10000000000000000000009 /* PermitSummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitSummaryCell.swift; sourceTree = "<group>"; };
+		A1000000000000000000000A /* PermitStatusBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitStatusBadge.swift; sourceTree = "<group>"; };
+		A10000000000000000000010 /* BriefSectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefSectionCell.swift; sourceTree = "<group>"; };
+		A10000000000000000000011 /* KeyRestrictionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyRestrictionsCell.swift; sourceTree = "<group>"; };
+		A10000000000000000000012 /* EscortRequirementsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscortRequirementsCell.swift; sourceTree = "<group>"; };
+		A10000000000000000000013 /* LoadInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadInfoCell.swift; sourceTree = "<group>"; };
+		A10000000000000000000014 /* VehicleInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleInfoCell.swift; sourceTree = "<group>"; };
+		A10000000000000000000015 /* PermitFeeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitFeeCell.swift; sourceTree = "<group>"; };
+		A10000000000000000000020 /* AlertsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsCell.swift; sourceTree = "<group>"; };
+		A10000000000000000000021 /* RouteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteCell.swift; sourceTree = "<group>"; };
+		A10000000000000000000022 /* RequiredEquipmentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequiredEquipmentCell.swift; sourceTree = "<group>"; };
+		A10000000000000000000023 /* DocumentsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsCell.swift; sourceTree = "<group>"; };
+		A10000000000000000000024 /* ContactsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsCell.swift; sourceTree = "<group>"; };
+		A10000000000000000000030 /* RouteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteDetailView.swift; sourceTree = "<group>"; };
+		A10000000000000000000031 /* Double+Miles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Miles.swift"; sourceTree = "<group>"; };
+		A10000000000000000000032 /* RouteOverviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteOverviewCell.swift; sourceTree = "<group>"; };
+		A10000000000000000000033 /* ProhibitedRoadsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProhibitedRoadsCell.swift; sourceTree = "<group>"; };
+		A10000000000000000000034 /* RouteDirectionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteDirectionsCell.swift; sourceTree = "<group>"; };
+		A10000000000000000000040 /* BriefInfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BriefInfoRow.swift"; sourceTree = "<group>"; };
+		A10000000000000000000041 /* BriefItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BriefItemRow.swift"; sourceTree = "<group>"; };
+		A10000000000000000000042 /* BriefIconRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BriefIconRow.swift"; sourceTree = "<group>"; };
+		A10000000000000000000043 /* Date+Range.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Range.swift"; sourceTree = "<group>"; };
+		A10000000000000000000044 /* View+Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Card.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +151,7 @@
 		5FA9869630745A49004F6C65 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A10000000000000000000006 /* PermitBrief.swift */,
 				A10000000000000000000001 /* Permit.swift */,
 				5FA986B83075BFBB004F6C65 /* PermitFilter.swift */,
 				5FA986BA307981D4004F6C65 /* PermitStatus.swift */,
@@ -116,8 +169,10 @@
 		5FA9869830745A53004F6C65 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				A30000000000000000000006 /* Components */,
 				5FA986B53075BB6B004F6C65 /* Constants */,
 				5FA986A63075A178004F6C65 /* Design */,
+				A3000000000000000000000B /* Extensions */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -126,7 +181,8 @@
 			isa = PBXGroup;
 			children = (
 				5FA986BC30798234004F6C65 /* MainTabBar */,
-				5FA986AE3075AF2B004F6C65 /* Permits */,
+				5FA986AE3075AF2B004F6C65 /* PermitsList */,
+				A30000000000000000000003 /* PermitBrief */,
 				A30000000000000000000001 /* Info */,
 			);
 			path = Features;
@@ -149,13 +205,13 @@
 			path = Design;
 			sourceTree = "<group>";
 		};
-		5FA986AE3075AF2B004F6C65 /* Permits */ = {
+		5FA986AE3075AF2B004F6C65 /* PermitsList */ = {
 			isa = PBXGroup;
 			children = (
 				5FA986B03075AF39004F6C65 /* Views */,
 				5FA986AF3075AF33004F6C65 /* ViewModels */,
 			);
-			path = Permits;
+			path = PermitsList;
 			sourceTree = "<group>";
 		};
 		5FA986AF3075AF33004F6C65 /* ViewModels */ = {
@@ -207,6 +263,100 @@
 				A10000000000000000000004 /* InfoView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		A30000000000000000000003 /* PermitBrief */ = {
+			isa = PBXGroup;
+			children = (
+				A30000000000000000000004 /* Views */,
+				A30000000000000000000005 /* ViewModels */,
+			);
+			path = PermitBrief;
+			sourceTree = "<group>";
+		};
+		A30000000000000000000004 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A30000000000000000000007 /* Cells */,
+				A10000000000000000000008 /* PermitBriefView.swift */,
+				A10000000000000000000030 /* RouteDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A30000000000000000000005 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000007 /* PermitBriefViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A30000000000000000000006 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A1000000000000000000000A /* PermitStatusBadge.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A30000000000000000000007 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A30000000000000000000008 /* Common */,
+				A30000000000000000000009 /* Brief */,
+				A3000000000000000000000A /* Route */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A30000000000000000000008 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000040 /* BriefInfoRow.swift */,
+				A10000000000000000000041 /* BriefItemRow.swift */,
+				A10000000000000000000042 /* BriefIconRow.swift */,
+				A10000000000000000000010 /* BriefSectionCell.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A30000000000000000000009 /* Brief */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000009 /* PermitSummaryCell.swift */,
+				A10000000000000000000011 /* KeyRestrictionsCell.swift */,
+				A10000000000000000000012 /* EscortRequirementsCell.swift */,
+				A10000000000000000000021 /* RouteCell.swift */,
+				A10000000000000000000020 /* AlertsCell.swift */,
+				A10000000000000000000013 /* LoadInfoCell.swift */,
+				A10000000000000000000014 /* VehicleInfoCell.swift */,
+				A10000000000000000000022 /* RequiredEquipmentCell.swift */,
+				A10000000000000000000023 /* DocumentsCell.swift */,
+				A10000000000000000000024 /* ContactsCell.swift */,
+				A10000000000000000000015 /* PermitFeeCell.swift */,
+			);
+			path = Brief;
+			sourceTree = "<group>";
+		};
+		A3000000000000000000000A /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000032 /* RouteOverviewCell.swift */,
+				A10000000000000000000033 /* ProhibitedRoadsCell.swift */,
+				A10000000000000000000034 /* RouteDirectionsCell.swift */,
+			);
+			path = Route;
+			sourceTree = "<group>";
+		};
+		A3000000000000000000000B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000031 /* Double+Miles.swift */,
+				A10000000000000000000043 /* Date+Range.swift */,
+				A10000000000000000000044 /* View+Card.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,6 +431,32 @@
 		5FA9867C30745982004F6C65 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
+				A20000000000000000000040 /* BriefInfoRow.swift in Sources */,
+				A20000000000000000000041 /* BriefItemRow.swift in Sources */,
+				A20000000000000000000042 /* BriefIconRow.swift in Sources */,
+				A20000000000000000000043 /* Date+Range.swift in Sources */,
+				A20000000000000000000044 /* View+Card.swift in Sources */,
+				A20000000000000000000031 /* Double+Miles.swift in Sources */,
+				A20000000000000000000032 /* RouteOverviewCell.swift in Sources */,
+				A20000000000000000000033 /* ProhibitedRoadsCell.swift in Sources */,
+				A20000000000000000000034 /* RouteDirectionsCell.swift in Sources */,
+				A20000000000000000000030 /* RouteDetailView.swift in Sources */,
+				A20000000000000000000020 /* AlertsCell.swift in Sources */,
+				A20000000000000000000021 /* RouteCell.swift in Sources */,
+				A20000000000000000000022 /* RequiredEquipmentCell.swift in Sources */,
+				A20000000000000000000023 /* DocumentsCell.swift in Sources */,
+				A20000000000000000000024 /* ContactsCell.swift in Sources */,
+				A20000000000000000000010 /* BriefSectionCell.swift in Sources */,
+				A20000000000000000000011 /* KeyRestrictionsCell.swift in Sources */,
+				A20000000000000000000012 /* EscortRequirementsCell.swift in Sources */,
+				A20000000000000000000013 /* LoadInfoCell.swift in Sources */,
+				A20000000000000000000014 /* VehicleInfoCell.swift in Sources */,
+				A20000000000000000000015 /* PermitFeeCell.swift in Sources */,
+				A2000000000000000000000A /* PermitStatusBadge.swift in Sources */,
+				A20000000000000000000009 /* PermitSummaryCell.swift in Sources */,
+				A20000000000000000000006 /* PermitBrief.swift in Sources */,
+				A20000000000000000000007 /* PermitBriefViewModel.swift in Sources */,
+				A20000000000000000000008 /* PermitBriefView.swift in Sources */,
 				A20000000000000000000005 /* PermitsEmptyStateView.swift in Sources */,
 				A20000000000000000000001 /* Permit.swift in Sources */,
 				A20000000000000000000002 /* PermitsFilterPicker.swift in Sources */,

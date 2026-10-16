@@ -4,27 +4,36 @@ struct PermitsView: View {
     @State private var viewModel = PermitsViewModel()
 
     var body: some View {
-        ZStack {
-            AppBackgroundView()
-
-            VStack(alignment: .leading, spacing: 0) {
-                header
-
-                if viewModel.isEmpty {
-                    PermitsEmptyStateView(onTryDemo: viewModel.tryDemoTapped)
-                } else {
-                    filterPicker
-                        .padding(.top, Design.sectionSpacing)
-                    permitsList
-                }
+        NavigationStack {
+            ZStack {
+                AppBackgroundView()
+                content
             }
-            .animation(.snappy, value: viewModel.isEmpty)
+            .toolbar(.hidden, for: .navigationBar)
+            .navigationDestination(item: $viewModel.selectedBrief) { brief in
+                PermitBriefView(viewModel: PermitBriefViewModel(brief: brief))
+            }
         }
     }
 }
 
 // MARK: - Components
 private extension PermitsView {
+    var content: some View {
+        VStack(alignment: .leading, spacing: 0) {
+            header
+
+            if viewModel.isEmpty {
+                PermitsEmptyStateView(onTryDemo: viewModel.tryDemoTapped)
+            } else {
+                filterPicker
+                    .padding(.top, Design.sectionSpacing)
+                permitsList
+            }
+        }
+        .animation(.snappy, value: viewModel.isEmpty)
+    }
+
     var header: some View {
         HStack(alignment: .top) {
             VStack(alignment: .leading, spacing: Design.headerSpacing) {
@@ -68,27 +77,28 @@ private extension PermitsView {
     }
 
     var permitsList: some View {
-          List {
-              ForEach(viewModel.filteredPermits) { permit in
-                  permitRow(permit)
-              }
-          }
-          .listStyle(.plain)
-          .scrollContentBackground(.hidden)
-          .scrollIndicators(.hidden)
-          .contentMargins(.top, Design.sectionSpacing, for: .scrollContent)
-          .mask {
-              VStack(spacing: 0) {
-                  LinearGradient(
-                      colors: [.clear, .black], startPoint: .top, endPoint: .bottom
-                  )
-                  .frame(height: Design.sectionSpacing)
-                  Rectangle()
-                      .ignoresSafeArea(edges: .bottom)
-              }
-          }
-          .animation(.snappy, value: viewModel.selectedFilter)
-      }
+        List {
+            ForEach(viewModel.filteredPermits) { permit in
+                permitRow(permit)
+            }
+        }
+        .listStyle(.plain)
+        .scrollContentBackground(.hidden)
+        .scrollIndicators(.hidden)
+        .contentMargins(.top, Design.sectionSpacing, for: .scrollContent)
+        .mask { topFadeMask }
+        .animation(.snappy, value: viewModel.selectedFilter)
+    }
+
+    var topFadeMask: some View {
+        VStack(spacing: 0) {
+            LinearGradient(colors: [.clear, .black], startPoint: .top, endPoint: .bottom)
+                .frame(height: Design.sectionSpacing)
+
+            Rectangle()
+                .ignoresSafeArea(edges: .bottom)
+        }
+    }
 
     func permitRow(_ permit: Permit) -> some View {
         Button {
@@ -116,7 +126,6 @@ private enum Design {
     static let topPadding: CGFloat = 24
     static let sectionSpacing: CGFloat = 22
     static let headerSpacing: CGFloat = 8
-    static let titleSize: CGFloat = 44
     static let rowSpacing: CGFloat = 12
 
     static let importButtonTopPadding: CGFloat = 4

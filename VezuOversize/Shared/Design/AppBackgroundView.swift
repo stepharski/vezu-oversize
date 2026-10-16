@@ -4,17 +4,24 @@ struct AppBackgroundView: View {
     var body: some View {
         ZStack(alignment: .topTrailing) {
             Color.nearBlack
-
-            Circle()
-                .fill(Color.yellowGlow)
-                .frame(width: Design.circleSize)
-                .blur(radius: Design.blurRadius)
-                .offset(x: Design.offset, y: -Design.offset)
+            glow
         }
         .ignoresSafeArea()
     }
 }
 
+// MARK: - Components
+private extension AppBackgroundView {
+    var glow: some View {
+        Circle()
+            .fill(Color.yellowGlow)
+            .frame(width: Design.circleSize)
+            .blur(radius: Design.blurRadius)
+            .offset(x: Design.offset, y: -Design.offset)
+    }
+}
+
+// MARK: - Design
 private enum Design {
     static let offset: CGFloat = 75
     static let circleSize: CGFloat = 200

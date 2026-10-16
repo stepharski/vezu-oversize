@@ -7,13 +7,13 @@ enum PermitStatus: Hashable {
     var title: String {
         switch self {
         case .active:
-            AppText.Filter.active
+            AppText.PermitStatus.active
         case .expired:
-            AppText.Filter.expired
+            AppText.PermitStatus.expired
         }
     }
 
     var isExpired: Bool {
-        self != .active
+        self == .expired
     }
 }

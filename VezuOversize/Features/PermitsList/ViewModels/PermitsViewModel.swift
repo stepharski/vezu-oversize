@@ -4,6 +4,7 @@ import Foundation
 final class PermitsViewModel {
     var permits: [Permit] = Permit.samples
     var selectedFilter: PermitFilter = .all
+    var selectedBrief: PermitBrief?
 
     var isEmpty: Bool {
         permits.isEmpty
@@ -20,11 +21,14 @@ final class PermitsViewModel {
     // TODO: Present PDF importer
     func importTapped() {}
 
-    // TODO: Navigate to permit details
-    func select(_ permit: Permit) {}
+    // TODO: Open the selected permit's own brief
+    func select(_ permit: Permit) {
+        selectedBrief = .demo
+    }
 
-    // TODO: Open demo permit brief
-    func tryDemoTapped() {}
+    func tryDemoTapped() {
+        selectedBrief = .demo
+    }
 
     private func matches(_ permit: Permit, filter: PermitFilter) -> Bool {
         switch filter {
