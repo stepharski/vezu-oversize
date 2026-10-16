@@ -1,0 +1,15 @@
+{
+  "originHash" : "2eff18b26df8be315189f75149d760265d4f955ba3832e93ad47f65553a236bf",
+  "pins" : [
+    {
+      "identity" : "swiftuipocketkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/stepharski/SwiftUIPocketKit.git",
+      "state" : {
+        "revision" : "01f690855449d699fe1cc267f2d9d02985f6534c",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 3
+}
