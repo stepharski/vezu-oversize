@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5FA986A53075A160004F6C65 /* SwiftUIPocketKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5FA986A43075A160004F6C65 /* SwiftUIPocketKit */; };
 		01D14BD25BC7568B0CF74BAF /* PermitBriefView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FE19C1E90EF0B327DBBD46 /* PermitBriefView.swift */; };
 		02FDD1046837CBF1ECBF5BAD /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2C3A8678782CC23D3F4D68 /* MainTabView.swift */; };
 		0346A21CC2C629237D1398DF /* PermitSummaryCritical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C79801ADD001AAE8160CD48 /* PermitSummaryCritical.swift */; };
@@ -32,6 +31,7 @@
 		5F8F56CD149B48CCABBBFDD6 /* PermitSummaryEscort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D318F6CC155AE0E465A9945 /* PermitSummaryEscort.swift */; };
 		5FA986923074598A004F6C65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FA9868E3074598A004F6C65 /* Assets.xcassets */; };
 		5FA9869C30758040004F6C65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FA9869B30758040004F6C65 /* LaunchScreen.storyboard */; };
+		5FA986A53075A160004F6C65 /* SwiftUIPocketKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5FA986A43075A160004F6C65 /* SwiftUIPocketKit */; };
 		6B26B9B998B20BCE9F081AB9 /* BriefIconRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C946B9636E61A239DB6D35A /* BriefIconRow.swift */; };
 		6E05B1977EA240CCA316692C /* PermitSummaryRestriction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50E070874403C1EA7ACC62F /* PermitSummaryRestriction.swift */; };
 		7098576AEC53FA07085DCA6D /* ContactsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D362D381C10210ACBA839B6 /* ContactsCell.swift */; };
@@ -93,7 +93,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5FA9868030745982004F6C65 /* VezuOversize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VezuOversize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		059D8EA63CFE621FE5DDE0D8 /* Double+Miles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Miles.swift"; sourceTree = "<group>"; };
 		066845C290B1B3B822C52E05 /* LoadInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadInfoCell.swift; sourceTree = "<group>"; };
 		096A44CE060261AD6BBFECB2 /* PermitBrief.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitBrief.swift; sourceTree = "<group>"; };
@@ -123,6 +122,7 @@
 		5C52BCE96A68F0CE717D8E14 /* Decoder+EnumRawValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decoder+EnumRawValue.swift"; sourceTree = "<group>"; };
 		5CE049CA433CC6125E6B3973 /* PermitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitManager.swift; sourceTree = "<group>"; };
 		5D318F6CC155AE0E465A9945 /* PermitSummaryEscort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitSummaryEscort.swift; sourceTree = "<group>"; };
+		5FA9868030745982004F6C65 /* VezuOversize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VezuOversize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FA9868E3074598A004F6C65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FA9869B30758040004F6C65 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5FA9869D307587C5004F6C65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -189,41 +189,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5FA9867730745982004F6C65 = {
+		0FC0DCF53778F7EC97BA4A17 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				5FA986913074598A004F6C65 /* VezuOversize */,
-				5FA9868130745982004F6C65 /* Products */,
+				78E875D80A43BD30FFF5AD15 /* ImportManager.swift */,
+				5CE049CA433CC6125E6B3973 /* PermitManager.swift */,
 			);
-			sourceTree = "<group>";
-		};
-		5FA9868130745982004F6C65 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5FA9868030745982004F6C65 /* VezuOversize.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		5FA986913074598A004F6C65 /* VezuOversize */ = {
-			isa = PBXGroup;
-			children = (
-				D1D0524B025E57AFFF263442 /* App */,
-				35D315DEBBF45F223B169A61 /* Core */,
-				984D844B917CCD4C29DE2A97 /* Features */,
-				A1C86A29E589D48EC70B6A32 /* Models */,
-				887A6F90336FF23D95C3914B /* Resources */,
-				B46A6AFB1DC88CE23F6E63F1 /* Shared */,
-			);
-			path = VezuOversize;
-			sourceTree = "<group>";
-		};
-		D1D0524B025E57AFFF263442 /* App */ = {
-			isa = PBXGroup;
-			children = (
-				1E9315644877F1FA29F2DF8F /* VezuOversizeApp.swift */,
-			);
-			path = App;
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		1AE1CC3C11F1602A3B309012 /* API */ = {
@@ -232,15 +204,6 @@
 				DDA495B1AF36DDD83F6C2728 /* APIPath.swift */,
 			);
 			path = API;
-			sourceTree = "<group>";
-		};
-		0FC0DCF53778F7EC97BA4A17 /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				78E875D80A43BD30FFF5AD15 /* ImportManager.swift */,
-				5CE049CA433CC6125E6B3973 /* PermitManager.swift */,
-			);
-			path = Managers;
 			sourceTree = "<group>";
 		};
 		1E39133965AFA6B29F5894C9 /* Services */ = {
@@ -253,6 +216,27 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		290471F0F336B5A44EECD4F2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9C6B261243E9621FBDC60E31 /* Subviews */,
+				6CDFFA3B40502852949BA43C /* PermitsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2B47353452D13614D25BBB62 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				49FD8218C2ACD30E392D583D /* AppError.swift */,
+				7A2535ACFC22A81C743587F9 /* AppTab.swift */,
+				88D6296CE87D05F283B7C366 /* AppText.swift */,
+				D754D44791BFA461C7CEEB9B /* NetworkConstants.swift */,
+				CC5E020BCA6CB2BDFAFEF08D /* Secrets.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		35D315DEBBF45F223B169A61 /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -261,38 +245,6 @@
 				1E39133965AFA6B29F5894C9 /* Services */,
 			);
 			path = Core;
-			sourceTree = "<group>";
-		};
-		A92E4D568FEACFEBFDBE9B97 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				C271E3BCCC8D89009A30BAE8 /* InfoView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		61C0DF9D4EA5996D2FA9982A /* Info */ = {
-			isa = PBXGroup;
-			children = (
-				A92E4D568FEACFEBFDBE9B97 /* Views */,
-			);
-			path = Info;
-			sourceTree = "<group>";
-		};
-		89F28E2EDEDBFB98042509EF /* MainTabBar */ = {
-			isa = PBXGroup;
-			children = (
-				0E2C3A8678782CC23D3F4D68 /* MainTabView.swift */,
-			);
-			path = MainTabBar;
-			sourceTree = "<group>";
-		};
-		6BAD896EAEBD96D52F83DD1E /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				D19B0BB974CFE0A0C362844A /* PermitBriefViewModel.swift */,
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		438EA7F0F1A9F81F34443BA3 /* Brief */ = {
@@ -324,34 +276,12 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
-		5BE14B08D4A5F99388B11635 /* Route */ = {
+		48D89C42E3CCB03CE5A051C8 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				D86956A2CC04AB2F7471101B /* ProhibitedRoadsCell.swift */,
-				94503D2A14A581339EE1B4EB /* RouteDirectionsCell.swift */,
-				3A06D7378AEC3239DB71EDD4 /* RouteOverviewCell.swift */,
+				8AF4682E4F3F41BED6D13C3B /* PermitsViewModel.swift */,
 			);
-			path = Route;
-			sourceTree = "<group>";
-		};
-		8340EA299B856BE93B9C0FA8 /* Subviews */ = {
-			isa = PBXGroup;
-			children = (
-				438EA7F0F1A9F81F34443BA3 /* Brief */,
-				47F99B69D253880D73F61D57 /* Common */,
-				5BE14B08D4A5F99388B11635 /* Route */,
-			);
-			path = Subviews;
-			sourceTree = "<group>";
-		};
-		56D89DD146126B417CDC53AE /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				8340EA299B856BE93B9C0FA8 /* Subviews */,
-				D8FE19C1E90EF0B327DBBD46 /* PermitBriefView.swift */,
-				CA59289E6BDD197F64557180 /* RouteDetailView.swift */,
-			);
-			path = Views;
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		4C13975F94BE5909C12B711D /* PermitBrief */ = {
@@ -361,62 +291,6 @@
 				56D89DD146126B417CDC53AE /* Views */,
 			);
 			path = PermitBrief;
-			sourceTree = "<group>";
-		};
-		48D89C42E3CCB03CE5A051C8 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				8AF4682E4F3F41BED6D13C3B /* PermitsViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		9C6B261243E9621FBDC60E31 /* Subviews */ = {
-			isa = PBXGroup;
-			children = (
-				C56DEE3F4D9A6DFB8E671A29 /* PendingImportRow.swift */,
-				BCFFC686C49234EB1AF253B4 /* PermitRowView.swift */,
-				5A2875DC70626129474E8248 /* PermitsEmptyStateView.swift */,
-				952768F0905EE27348E9DBFB /* PermitsFilterPicker.swift */,
-			);
-			path = Subviews;
-			sourceTree = "<group>";
-		};
-		290471F0F336B5A44EECD4F2 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				9C6B261243E9621FBDC60E31 /* Subviews */,
-				6CDFFA3B40502852949BA43C /* PermitsView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		941A2B5C6AA00745C34CD49B /* Permits */ = {
-			isa = PBXGroup;
-			children = (
-				48D89C42E3CCB03CE5A051C8 /* ViewModels */,
-				290471F0F336B5A44EECD4F2 /* Views */,
-			);
-			path = Permits;
-			sourceTree = "<group>";
-		};
-		71B0148FE713C3F5428A554E /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				61C0DF9D4EA5996D2FA9982A /* Info */,
-				89F28E2EDEDBFB98042509EF /* MainTabBar */,
-				4C13975F94BE5909C12B711D /* PermitBrief */,
-				941A2B5C6AA00745C34CD49B /* Permits */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
-		984D844B917CCD4C29DE2A97 /* Features */ = {
-			isa = PBXGroup;
-			children = (
-				71B0148FE713C3F5428A554E /* Main */,
-			);
-			path = Features;
 			sourceTree = "<group>";
 		};
 		54D50BA7462606D470F90771 /* Permit */ = {
@@ -431,31 +305,80 @@
 			path = Permit;
 			sourceTree = "<group>";
 		};
-		EAB343ABEA240A6B9394C63E /* PermitBrief */ = {
+		56D89DD146126B417CDC53AE /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				096A44CE060261AD6BBFECB2 /* PermitBrief.swift */,
-				1FF795F0557E6225D8701777 /* PermitBriefItem.swift */,
-				24C74C2DC1FCF79DAF90F58A /* PermitContact.swift */,
-				E5C27F88858A55CE065856FF /* PermitCriticalAnswer.swift */,
-				16595F2C35E4EA343C935B92 /* PermitCriticalInfo.swift */,
-				32CA4899BE1669A991D93FD7 /* PermitEscortRule.swift */,
-				A300B1A3752E5C28E51F7B32 /* PermitLoad.swift */,
-				58A322FD0561B446D67AB689 /* PermitRestriction.swift */,
-				CFD137BAFD2C7C3DDBF03CF2 /* PermitRoute.swift */,
-				9AB65FC4D920AABBF36E0DB8 /* PermitRouteStep.swift */,
-				7153C6E63DAA4C099C24B2AE /* PermitVehicle.swift */,
+				8340EA299B856BE93B9C0FA8 /* Subviews */,
+				D8FE19C1E90EF0B327DBBD46 /* PermitBriefView.swift */,
+				CA59289E6BDD197F64557180 /* RouteDetailView.swift */,
 			);
-			path = PermitBrief;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		D33F660BC3143A392C13543E /* Requests */ = {
+		5BE14B08D4A5F99388B11635 /* Route */ = {
 			isa = PBXGroup;
 			children = (
-				8DBA33A8F1C697B6760B431D /* PermitFile.swift */,
-				2B76B0596734597FB181EBCB /* SummarizePermitRequest.swift */,
+				D86956A2CC04AB2F7471101B /* ProhibitedRoadsCell.swift */,
+				94503D2A14A581339EE1B4EB /* RouteDirectionsCell.swift */,
+				3A06D7378AEC3239DB71EDD4 /* RouteOverviewCell.swift */,
 			);
-			path = Requests;
+			path = Route;
+			sourceTree = "<group>";
+		};
+		5FA9867730745982004F6C65 = {
+			isa = PBXGroup;
+			children = (
+				5FA986913074598A004F6C65 /* VezuOversize */,
+				5FA9868130745982004F6C65 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5FA9868130745982004F6C65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5FA9868030745982004F6C65 /* VezuOversize.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5FA986913074598A004F6C65 /* VezuOversize */ = {
+			isa = PBXGroup;
+			children = (
+				D1D0524B025E57AFFF263442 /* App */,
+				35D315DEBBF45F223B169A61 /* Core */,
+				984D844B917CCD4C29DE2A97 /* Features */,
+				A1C86A29E589D48EC70B6A32 /* Models */,
+				887A6F90336FF23D95C3914B /* Resources */,
+				B46A6AFB1DC88CE23F6E63F1 /* Shared */,
+			);
+			path = VezuOversize;
+			sourceTree = "<group>";
+		};
+		61C0DF9D4EA5996D2FA9982A /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				A92E4D568FEACFEBFDBE9B97 /* Views */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		6BAD896EAEBD96D52F83DD1E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D19B0BB974CFE0A0C362844A /* PermitBriefViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		71B0148FE713C3F5428A554E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				61C0DF9D4EA5996D2FA9982A /* Info */,
+				89F28E2EDEDBFB98042509EF /* MainTabBar */,
+				4C13975F94BE5909C12B711D /* PermitBrief */,
+				941A2B5C6AA00745C34CD49B /* Permits */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		71F38F9B08EE0343EFA0F28F /* Responses */ = {
@@ -478,15 +401,14 @@
 			path = Responses;
 			sourceTree = "<group>";
 		};
-		A1C86A29E589D48EC70B6A32 /* Models */ = {
+		8340EA299B856BE93B9C0FA8 /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
-				54D50BA7462606D470F90771 /* Permit */,
-				EAB343ABEA240A6B9394C63E /* PermitBrief */,
-				D33F660BC3143A392C13543E /* Requests */,
-				71F38F9B08EE0343EFA0F28F /* Responses */,
+				438EA7F0F1A9F81F34443BA3 /* Brief */,
+				47F99B69D253880D73F61D57 /* Common */,
+				5BE14B08D4A5F99388B11635 /* Route */,
 			);
-			path = Models;
+			path = Subviews;
 			sourceTree = "<group>";
 		};
 		887A6F90336FF23D95C3914B /* Resources */ = {
@@ -499,6 +421,97 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		89F28E2EDEDBFB98042509EF /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				0E2C3A8678782CC23D3F4D68 /* MainTabView.swift */,
+			);
+			path = MainTabBar;
+			sourceTree = "<group>";
+		};
+		941A2B5C6AA00745C34CD49B /* Permits */ = {
+			isa = PBXGroup;
+			children = (
+				48D89C42E3CCB03CE5A051C8 /* ViewModels */,
+				290471F0F336B5A44EECD4F2 /* Views */,
+			);
+			path = Permits;
+			sourceTree = "<group>";
+		};
+		984D844B917CCD4C29DE2A97 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				71B0148FE713C3F5428A554E /* Main */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		9C6B261243E9621FBDC60E31 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				C56DEE3F4D9A6DFB8E671A29 /* PendingImportRow.swift */,
+				BCFFC686C49234EB1AF253B4 /* PermitRowView.swift */,
+				5A2875DC70626129474E8248 /* PermitsEmptyStateView.swift */,
+				952768F0905EE27348E9DBFB /* PermitsFilterPicker.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		9D958B6B3100E9AA06680E5B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F5683433C4C2AFEFAE9FCA43 /* Foundation */,
+				FFE3D3DB58D3B7E9E25A4624 /* SwiftUI */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A1C86A29E589D48EC70B6A32 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				54D50BA7462606D470F90771 /* Permit */,
+				EAB343ABEA240A6B9394C63E /* PermitBrief */,
+				D33F660BC3143A392C13543E /* Requests */,
+				71F38F9B08EE0343EFA0F28F /* Responses */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A92E4D568FEACFEBFDBE9B97 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C271E3BCCC8D89009A30BAE8 /* InfoView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B46A6AFB1DC88CE23F6E63F1 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				D893723842785C94B6717501 /* Components */,
+				2B47353452D13614D25BBB62 /* Constants */,
+				9D958B6B3100E9AA06680E5B /* Extensions */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		D1D0524B025E57AFFF263442 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1E9315644877F1FA29F2DF8F /* VezuOversizeApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D33F660BC3143A392C13543E /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				8DBA33A8F1C697B6760B431D /* PermitFile.swift */,
+				2B76B0596734597FB181EBCB /* SummarizePermitRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
 		D893723842785C94B6717501 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -508,16 +521,22 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		2B47353452D13614D25BBB62 /* Constants */ = {
+		EAB343ABEA240A6B9394C63E /* PermitBrief */ = {
 			isa = PBXGroup;
 			children = (
-				49FD8218C2ACD30E392D583D /* AppError.swift */,
-				7A2535ACFC22A81C743587F9 /* AppTab.swift */,
-				88D6296CE87D05F283B7C366 /* AppText.swift */,
-				D754D44791BFA461C7CEEB9B /* NetworkConstants.swift */,
-				CC5E020BCA6CB2BDFAFEF08D /* Secrets.swift */,
+				096A44CE060261AD6BBFECB2 /* PermitBrief.swift */,
+				1FF795F0557E6225D8701777 /* PermitBriefItem.swift */,
+				24C74C2DC1FCF79DAF90F58A /* PermitContact.swift */,
+				E5C27F88858A55CE065856FF /* PermitCriticalAnswer.swift */,
+				16595F2C35E4EA343C935B92 /* PermitCriticalInfo.swift */,
+				32CA4899BE1669A991D93FD7 /* PermitEscortRule.swift */,
+				A300B1A3752E5C28E51F7B32 /* PermitLoad.swift */,
+				58A322FD0561B446D67AB689 /* PermitRestriction.swift */,
+				CFD137BAFD2C7C3DDBF03CF2 /* PermitRoute.swift */,
+				9AB65FC4D920AABBF36E0DB8 /* PermitRouteStep.swift */,
+				7153C6E63DAA4C099C24B2AE /* PermitVehicle.swift */,
 			);
-			path = Constants;
+			path = PermitBrief;
 			sourceTree = "<group>";
 		};
 		F5683433C4C2AFEFAE9FCA43 /* Foundation */ = {
@@ -538,25 +557,6 @@
 				2763C990FA20AC14E7C6D863 /* View+Card.swift */,
 			);
 			path = SwiftUI;
-			sourceTree = "<group>";
-		};
-		9D958B6B3100E9AA06680E5B /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				F5683433C4C2AFEFAE9FCA43 /* Foundation */,
-				FFE3D3DB58D3B7E9E25A4624 /* SwiftUI */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		B46A6AFB1DC88CE23F6E63F1 /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-				D893723842785C94B6717501 /* Components */,
-				2B47353452D13614D25BBB62 /* Constants */,
-				9D958B6B3100E9AA06680E5B /* Extensions */,
-			);
-			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -768,7 +768,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -825,7 +825,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -842,18 +842,20 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W78FYLG72B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VezuOversize/Resources/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = VEZU;
+				INFOPLIST_KEY_CFBundleDisplayName = Vezu;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = NO;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -882,18 +884,20 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W78FYLG72B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VezuOversize/Resources/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = VEZU;
+				INFOPLIST_KEY_CFBundleDisplayName = Vezu;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = NO;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

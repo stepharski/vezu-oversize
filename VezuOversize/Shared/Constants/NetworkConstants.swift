@@ -21,5 +21,6 @@ enum NetworkConstants {
         static let refused = "refused"
         static let truncated = "truncated"
         static let unparseableOutput = "unparseable_output"
+        static let notAPermit = "not_a_permit"
     }
 }

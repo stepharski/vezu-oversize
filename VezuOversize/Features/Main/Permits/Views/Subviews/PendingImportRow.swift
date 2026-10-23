@@ -11,7 +11,7 @@ struct PendingImportRow: View {
             statusIcon
 
             VStack(alignment: .leading, spacing: Design.vSpacing) {
-                Text(pendingImport.isReading ? AppText.PermitImport.reading : AppText.PermitImport.failed)
+                Text(title)
                     .font(.headline)
                     .foregroundStyle(Color.primaryWhite)
                     .lineLimit(1)
@@ -43,6 +43,13 @@ struct PendingImportRow: View {
 }
 
 private extension PendingImportRow {
+    var title: String {
+        if pendingImport.isReading {
+            return AppText.PermitImport.reading
+        }
+        return pendingImport.canRetry ? AppText.PermitImport.failed : AppText.PermitImport.notAPermit
+    }
+
     var fileText: String {
         let extraFiles = pendingImport.fileCount - 1
         guard extraFiles > 0 else { return pendingImport.fileName }
@@ -66,9 +73,11 @@ private extension PendingImportRow {
 
     var actions: some View {
         HStack(spacing: Design.actionSpacing) {
-            Button(AppText.PermitImport.retry, action: onRetry)
-                .font(.subheadline.weight(.semibold))
-                .foregroundStyle(Color.primaryYellow)
+            if pendingImport.canRetry {
+                Button(AppText.PermitImport.retry, action: onRetry)
+                    .font(.subheadline.weight(.semibold))
+                    .foregroundStyle(Color.primaryYellow)
+            }
 
             Button(AppText.PermitImport.remove, action: onRemove)
                 .font(.subheadline.weight(.semibold))

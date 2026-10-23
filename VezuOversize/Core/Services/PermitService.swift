@@ -17,15 +17,19 @@ extension PermitService: PermitServicable {
         let response = try await networkService.request(
             .summarizePermit(request: SummarizePermitRequest(pdfs: files)),
             responseModel: PermitSummaryResponse.self)
-        return brief(from: response)
+        return try brief(from: response)
     }
 }
 
 // The server sends empty strings and zeros for anything the permit doesn't state;
 // the app's model uses nil for those.
 private extension PermitService {
-    func brief(from response: PermitSummaryResponse) -> PermitBrief {
+    func brief(from response: PermitSummaryResponse) throws -> PermitBrief {
         let summary = response.summary
+        // A reply with neither a state nor a permit number isn't a permit, whatever the server says.
+        guard summary.stateCode.nilIfEmpty != nil || summary.number.nilIfEmpty != nil else {
+            throw AppError.notAPermit
+        }
         var reviewNotes = response.checks?.problems ?? []
 
         let validFrom = date(from: summary.validFrom)

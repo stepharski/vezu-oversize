@@ -45,6 +45,8 @@ struct NetworkService {
             return .filesTooLarge
         case (_, NetworkConstants.ErrorCode.tooManyFiles):
             return .tooManyFiles
+        case (_, NetworkConstants.ErrorCode.notAPermit):
+            return .notAPermit
         case (_, NetworkConstants.ErrorCode.refused), (_, NetworkConstants.ErrorCode.truncated),
              (_, NetworkConstants.ErrorCode.unparseableOutput):
             return .unreadablePermit

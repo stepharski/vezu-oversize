@@ -119,7 +119,7 @@ final class ImportManager {
                 jobs[id] = nil
                 handleFailure(error, title: AppText.PermitImport.reloadErrorTitle)
             } else {
-                setState(.failed((error as? AppError ?? .unreadablePermit).rawValue), for: id)
+                setState(.failed(error as? AppError ?? .unreadablePermit), for: id)
             }
         }
         if let replacingID = job.replacingID {

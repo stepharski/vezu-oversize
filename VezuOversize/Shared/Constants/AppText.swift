@@ -26,6 +26,7 @@ enum AppText {
         static let reading = "Reading permit…"
         static let readingHint = "Usually under a minute"
         static let failed = "Couldn't read this permit"
+        static let notAPermit = "Not a permit"
         static let errorTitle = "Couldn't open this file"
         static let reloadErrorTitle = "Couldn't reload this permit"
         static let reloading = "RELOADING…"

@@ -3,7 +3,7 @@ import Foundation
 struct PendingImport: Identifiable, Hashable {
     enum State: Hashable {
         case reading
-        case failed(String)
+        case failed(AppError)
     }
 
     let id: UUID
@@ -18,7 +18,13 @@ extension PendingImport {
     }
 
     var errorMessage: String? {
-        guard case .failed(let message) = state else { return nil }
-        return message
+        guard case .failed(let error) = state else { return nil }
+        return error.rawValue
+    }
+
+    // Reading a file that isn't a permit again won't change the answer.
+    var canRetry: Bool {
+        guard case .failed(let error) = state else { return false }
+        return error != .notAPermit
     }
 }

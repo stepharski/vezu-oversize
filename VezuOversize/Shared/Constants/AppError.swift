@@ -11,4 +11,5 @@ enum AppError: String, Error {
     case tooManyFiles = "A permit can have up to 5 files."
     case unreadableFile = "This file couldn't be opened. Please try another PDF."
     case unreadablePermit = "This permit couldn't be read. Make sure the PDF is an oversize permit."
+    case notAPermit = "This doesn't look like an oversize permit. Only permit PDFs can be read."
 }
