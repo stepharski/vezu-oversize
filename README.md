@@ -1,8 +1,8 @@
 # VEZU Oversize
 
-AI-powered oversize permit briefs.
+AI-powered oversize load permit briefs.
 
-VEZU Oversize turns complex oversize-load permits into a simple, easy-to-read brief.
+VEZU reads an oversize/overweight load permit PDF and turns it into a short brief a driver can check on the phone, then sends the permitted route to Google Maps.
 
 ## Features
 
@@ -11,18 +11,24 @@ VEZU Oversize turns complex oversize-load permits into a simple, easy-to-read br
 - Extract important permit information
 - AI-powered permit summaries
 - Highlight restrictions and requirements
-- Privacy-focused, on-device processing
+- Open permitted routes in Google Maps
 
-## Status
+## How it works
 
-🚧 In development
+- The app sends permit PDFs to our Cloudflare Worker (`vezu-permits`, a separate repo), which reads them with Claude and returns the brief and the route. The Anthropic API key stays on the Worker.
+- Route waypoints are found and placed by the Worker on its own map data: OpenStreetMap highways and US Census state borders. Apple Maps search covers street addresses.
+- Permits, their PDFs and prepared routes are stored on the phone only; the Worker keeps nothing.
 
 ## Requirements
 
-- iOS 26+
+- iOS 18+
 - Xcode 26+
-- Swift 6+
+
+## Credits
+
+- State boundaries: US Census Bureau (public domain)
+- Road data © [OpenStreetMap](https://www.openstreetmap.org/copyright)
 
 ## License
 
-License to be determined.
+Copyright © 2026 Stepan Kukharskyi. All rights reserved.
