@@ -14,14 +14,20 @@ struct PermitStatusBadge: View {
     }
 }
 
-// MARK: - Components
 private extension PermitStatusBadge {
     var isActive: Bool {
-        status == .active
+        status != .expired
     }
 
     var tint: Color {
-        isActive ? .statusGreen : .secondaryGray
+        switch status {
+        case .active:
+            return .statusGreen
+        case .upcoming:
+            return .primaryYellow
+        case .expired:
+            return .secondaryGray
+        }
     }
 
     var dot: some View {
@@ -33,23 +39,13 @@ private extension PermitStatusBadge {
     var title: some View {
         Text(status.title.uppercased())
             .font(.caption.weight(.medium))
-            .foregroundStyle(isActive ? Color.statusGreen : Color.primaryWhite.opacity(0.85))
+            .foregroundStyle(isActive ? tint : Color.primaryWhite.opacity(0.85))
     }
 }
 
-// MARK: - Design
 private enum Design {
     static let spacing: CGFloat = 6
     static let dotSize: CGFloat = 8
     static let horizontalPadding: CGFloat = 10
     static let verticalPadding: CGFloat = 6
-}
-
-#Preview {
-    HStack {
-        PermitStatusBadge(status: .active)
-        PermitStatusBadge(status: .expired)
-    }
-    .padding()
-    .background(Color.nearBlack)
 }

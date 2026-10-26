@@ -13,3 +13,5 @@ build/
 *.ipa
 *.dSYM
 *.dSYM.zip
+# Secrets
+VezuOversize/Shared/Constants/Secrets.swift

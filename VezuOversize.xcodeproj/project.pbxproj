@@ -7,96 +7,224 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01D14BD25BC7568B0CF74BAF /* PermitBriefView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FE19C1E90EF0B327DBBD46 /* PermitBriefView.swift */; };
+		02FDD1046837CBF1ECBF5BAD /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2C3A8678782CC23D3F4D68 /* MainTabView.swift */; };
+		0346A21CC2C629237D1398DF /* PermitSummaryCritical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C79801ADD001AAE8160CD48 /* PermitSummaryCritical.swift */; };
+		08221BE9F632BE40B29BA32F /* APIPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA495B1AF36DDD83F6C2728 /* APIPath.swift */; };
+		0F13C054CD7C1F65C082A9BB /* PermitsEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2875DC70626129474E8248 /* PermitsEmptyStateView.swift */; };
+		125625061AFF0D29CFB3D247 /* PermitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CDFFA3B40502852949BA43C /* PermitsView.swift */; };
+		135C1469266D0E240DF0BC48 /* AlertsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4688F18621A003D14A594494 /* AlertsCell.swift */; };
+		1679CFFFFC7F50349751741A /* PermitCriticalInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16595F2C35E4EA343C935B92 /* PermitCriticalInfo.swift */; };
+		25C1ABD535904680D9B71321 /* PermitSummaryChecks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30F8CA264BAB82A38A4F785 /* PermitSummaryChecks.swift */; };
+		28B0FD85BA619A1EB1106524 /* PermitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF4682E4F3F41BED6D13C3B /* PermitsViewModel.swift */; };
+		292B0EA1C1A5B841C213135D /* PermitSummaryRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A03A734C9F4982322C9E5D1 /* PermitSummaryRoute.swift */; };
+		129082037E6445F0A8B0579C /* PermitRouteResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DA1CF038604914AA36B62E /* PermitRouteResponse.swift */; };
+		81860A8000AE4B5FAF4E2A3D /* LeadInResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D109F32723A4A69AA6A4599 /* LeadInResponse.swift */; };
+		3288C5DD703C4EBBAC460E78 /* PlacesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB752B92249F4004ABC2033D /* PlacesResponse.swift */; };
+		70FBF3B2BD73460BA32A5CC1 /* PlaceResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF463AF5C1E94CBAB331DC5E /* PlaceResult.swift */; };
+		444B7A460B914863AD7EF938 /* PermitDetailedRouteStepSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C055606D61B47A19EE5D657 /* PermitDetailedRouteStepSummary.swift */; };
+		41F13CBA9DFA4B09B97DE4A7 /* PermitDetailedRouteSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03CCEDB46114B1D9DFA9879 /* PermitDetailedRouteSummary.swift */; };
+		31D795A43E970EA28963B783 /* PermitCriticalAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C27F88858A55CE065856FF /* PermitCriticalAnswer.swift */; };
+		34A00BE8DEE71E5883B6961F /* VehicleInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8E3B234B3FD5CDC3A81146 /* VehicleInfoCell.swift */; };
+		373FCE2C188307719CDF181D /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FD8218C2ACD30E392D583D /* AppError.swift */; };
+		391561AC8ECD7DE0AA3ECFC3 /* PermitVehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7153C6E63DAA4C099C24B2AE /* PermitVehicle.swift */; };
+		39E6247402BD82605C22CD4A /* PermitStatusBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6889265495637CB8A9075513 /* PermitStatusBadge.swift */; };
+		3DF5BEFEED8D8A9EDE3A7BCF /* AppBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5762614B6E2D127C186B9892 /* AppBackgroundView.swift */; };
+		3E3FCEEF7187E6EE1D195999 /* PendingImportRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56DEE3F4D9A6DFB8E671A29 /* PendingImportRow.swift */; };
+		41DA1E3BAF852685162DE417 /* BriefInfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917E726DEEFBC4B56ED97DF8 /* BriefInfoRow.swift */; };
+		4F41202EDF44AEF224808160 /* PendingImport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFF6B33894E7D442E8B6D5D /* PendingImport.swift */; };
+		4F824315B3152A3346A2110F /* PermitContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C74C2DC1FCF79DAF90F58A /* PermitContact.swift */; };
+		5F8F56CD149B48CCABBBFDD6 /* PermitSummaryEscort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D318F6CC155AE0E465A9945 /* PermitSummaryEscort.swift */; };
 		5FA986923074598A004F6C65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FA9868E3074598A004F6C65 /* Assets.xcassets */; };
-		5FA986943074598A004F6C65 /* VezuOversizeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA986903074598A004F6C65 /* VezuOversizeApp.swift */; };
 		5FA9869C30758040004F6C65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FA9869B30758040004F6C65 /* LaunchScreen.storyboard */; };
 		5FA986A53075A160004F6C65 /* SwiftUIPocketKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5FA986A43075A160004F6C65 /* SwiftUIPocketKit */; };
-		5FA986A93075A1E1004F6C65 /* Color+Scheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA986A83075A1E1004F6C65 /* Color+Scheme.swift */; };
-		5FA986AD3075A68E004F6C65 /* AppBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA986AC3075A68E004F6C65 /* AppBackgroundView.swift */; };
-		5FA986B23075AF50004F6C65 /* PermitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA986B13075AF50004F6C65 /* PermitsView.swift */; };
-		5FA986B43075AF58004F6C65 /* PermitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA986B33075AF58004F6C65 /* PermitsViewModel.swift */; };
-		5FA986B73075BB73004F6C65 /* AppText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA986B63075BB73004F6C65 /* AppText.swift */; };
-		5FA986B93075BFBB004F6C65 /* PermitFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA986B83075BFBB004F6C65 /* PermitFilter.swift */; };
-		5FA986BB307981D4004F6C65 /* PermitStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA986BA307981D4004F6C65 /* PermitStatus.swift */; };
-		5FA986BE30798244004F6C65 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA986BD30798244004F6C65 /* MainTabView.swift */; };
-		A20000000000000000000001 /* Permit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000001 /* Permit.swift */; };
-		A20000000000000000000002 /* PermitsFilterPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000002 /* PermitsFilterPicker.swift */; };
-		A20000000000000000000003 /* PermitRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000003 /* PermitRowView.swift */; };
-		A20000000000000000000004 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000004 /* InfoView.swift */; };
-		A20000000000000000000005 /* PermitsEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000005 /* PermitsEmptyStateView.swift */; };
-		A20000000000000000000006 /* PermitBrief.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000006 /* PermitBrief.swift */; };
-		A20000000000000000000007 /* PermitBriefViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000007 /* PermitBriefViewModel.swift */; };
-		A20000000000000000000008 /* PermitBriefView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000008 /* PermitBriefView.swift */; };
-		A20000000000000000000009 /* PermitSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000009 /* PermitSummaryCell.swift */; };
-		A2000000000000000000000A /* PermitStatusBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000000000000000000000A /* PermitStatusBadge.swift */; };
-		A20000000000000000000010 /* BriefSectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000010 /* BriefSectionCell.swift */; };
-		A20000000000000000000011 /* KeyRestrictionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000011 /* KeyRestrictionsCell.swift */; };
-		A20000000000000000000012 /* EscortRequirementsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000012 /* EscortRequirementsCell.swift */; };
-		A20000000000000000000013 /* LoadInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000013 /* LoadInfoCell.swift */; };
-		A20000000000000000000014 /* VehicleInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000014 /* VehicleInfoCell.swift */; };
-		A20000000000000000000015 /* PermitFeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000015 /* PermitFeeCell.swift */; };
-		A20000000000000000000020 /* AlertsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000020 /* AlertsCell.swift */; };
-		A20000000000000000000021 /* RouteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000021 /* RouteCell.swift */; };
-		A20000000000000000000022 /* RequiredEquipmentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000022 /* RequiredEquipmentCell.swift */; };
-		A20000000000000000000023 /* DocumentsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000023 /* DocumentsCell.swift */; };
-		A20000000000000000000024 /* ContactsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000024 /* ContactsCell.swift */; };
-		A20000000000000000000030 /* RouteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000030 /* RouteDetailView.swift */; };
-		A20000000000000000000031 /* Double+Miles.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000031 /* Double+Miles.swift */; };
-		A20000000000000000000032 /* RouteOverviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000032 /* RouteOverviewCell.swift */; };
-		A20000000000000000000033 /* ProhibitedRoadsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000033 /* ProhibitedRoadsCell.swift */; };
-		A20000000000000000000034 /* RouteDirectionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000034 /* RouteDirectionsCell.swift */; };
-		A20000000000000000000040 /* BriefInfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000040 /* BriefInfoRow.swift */; };
-		A20000000000000000000041 /* BriefItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000041 /* BriefItemRow.swift */; };
-		A20000000000000000000042 /* BriefIconRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000042 /* BriefIconRow.swift */; };
-		A20000000000000000000043 /* Date+Range.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000043 /* Date+Range.swift */; };
-		A20000000000000000000044 /* View+Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000044 /* View+Card.swift */; };
+		6B26B9B998B20BCE9F081AB9 /* BriefIconRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C946B9636E61A239DB6D35A /* BriefIconRow.swift */; };
+		6E05B1977EA240CCA316692C /* PermitSummaryRestriction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50E070874403C1EA7ACC62F /* PermitSummaryRestriction.swift */; };
+		7098576AEC53FA07085DCA6D /* ContactsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D362D381C10210ACBA839B6 /* ContactsCell.swift */; };
+		76036B7E6E53189E3C73DE3C /* PermitRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690693F6863C59E184EFFA2B /* PermitRecord.swift */; };
+		763CDDCEA91BA717E78BA472 /* RouteDirectionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94503D2A14A581339EE1B4EB /* RouteDirectionsCell.swift */; };
+		766F4C924BD53C489E13230B /* String+NilIfEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5199476D3BFC3DBAD49CDA4D /* String+NilIfEmpty.swift */; };
+		805C5FDA29631EE60AB8F971 /* Permit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3D7DFF826E59FEBCEAD051 /* Permit.swift */; };
+		816698E1392C1BECE38C062C /* PermitSummaryVehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA417CCB6B8678C40181B8E2 /* PermitSummaryVehicle.swift */; };
+		889FEA66546D7BB83A55CA4F /* PermitSummaryLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDA91F4C9C86EE45E24B06A /* PermitSummaryLoad.swift */; };
+		8B3B96DFCC94100D2F6C6A6E /* Date+Range.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EE3A404E7D065F06514BD9 /* Date+Range.swift */; };
+		8BCCD8D8057AEB6DC3C491FD /* PermitRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD137BAFD2C7C3DDBF03CF2 /* PermitRoute.swift */; };
+		8F9D2A5B66788085153D0967 /* PermitFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBA33A8F1C697B6760B431D /* PermitFile.swift */; };
+		9150747919172B8E3BCE53B7 /* PermitBrief.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096A44CE060261AD6BBFECB2 /* PermitBrief.swift */; };
+		95254E49D5C4E57078AA0444 /* ImportManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E875D80A43BD30FFF5AD15 /* ImportManager.swift */; };
+		95B262CAB0C16D53D98DCA0F /* PermitRouteStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB65FC4D920AABBF36E0DB8 /* PermitRouteStep.swift */; };
+		46A70F0755FC49D8B8038578 /* PermitDetailedRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A78F50A4CD44BAB1CAE850 /* PermitDetailedRoute.swift */; };
+		DF932D7C7587435C97FE6951 /* RouteWaypoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72488700DDB474D8DAAB4FC /* RouteWaypoint.swift */; };
+		54E9C09478CA420CA1852E37 /* MapMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0D5664AE8349DE9D2150A3 /* MapMatch.swift */; };
+		A9678510C5FD4D1F8DEF49BE /* RouteGeocodingHint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F22A116FAEA463E99DE5E90 /* RouteGeocodingHint.swift */; };
+		2AF14E36550640889A64757C /* RouteGeocodingQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6629468B583745E28E508679 /* RouteGeocodingQuery.swift */; };
+		E2A9A4BABAC44E1FA4118E54 /* RouteDetailState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BBDA7BCB1842A1AF93D9F1 /* RouteDetailState.swift */; };
+		96F1812D1DC2A04636AE90B6 /* PermitSummaryRouteStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = C430FEB9E29589898ECD874D /* PermitSummaryRouteStep.swift */; };
+		9770A0A1071341E9B913E53B /* PermitLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = A300B1A3752E5C28E51F7B32 /* PermitLoad.swift */; };
+		9850F61F70A36B5DF0435436 /* PermitFeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B584B043E27DE0E688AB74 /* PermitFeeCell.swift */; };
+		98702400F98A292766EA4DFA /* PermitSummaryContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4A05F5EF393965754759F4 /* PermitSummaryContact.swift */; };
+		9B3DB2ED69AF68334C946491 /* SummarizePermitRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B76B0596734597FB181EBCB /* SummarizePermitRequest.swift */; };
+		21EA20F4AEC54AFC941509CC /* LeadInRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5618863F091E447AA1A79450 /* LeadInRequest.swift */; };
+		D12AAB1162B1438E9127DD73 /* PlaceQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611FBF8A63004032BCA40DB1 /* PlaceQuery.swift */; };
+		243F8F19C4B44BD584A30870 /* LeadInPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF1C62DCC41425B9AFAED39 /* LeadInPoint.swift */; };
+		E8FA764C18B142F396A1F568 /* MapCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C60719DCBE4195B356EBCF /* MapCoordinate.swift */; };
+		EE3F215545704BBA984D96FB /* PlacesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0D8A63C9CE49E99C8CF6C2 /* PlacesRequest.swift */; };
+		9BBE4A1E1AC8B3D47FA5D55F /* BriefSectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D19DAD451BE8DEEE2597C6 /* BriefSectionCell.swift */; };
+		9C58EEC77D7F19B2A787C2F1 /* PermitEscortRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CA4899BE1669A991D93FD7 /* PermitEscortRule.swift */; };
+		9CB5C3BEC8D634B754B977D5 /* AppText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D6296CE87D05F283B7C366 /* AppText.swift */; };
+		9D2CD5D4C90568BB03320A42 /* PermitsFilterPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952768F0905EE27348E9DBFB /* PermitsFilterPicker.swift */; };
+		9FDD09D1E7454474D2CBC2DF /* PermitSummaryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A379382E0F87EFEB315B81 /* PermitSummaryItem.swift */; };
+		A2160370940A1B3556637C66 /* RouteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA59289E6BDD197F64557180 /* RouteDetailView.swift */; };
+		A36F1B61635A81424D3828F3 /* RouteOverviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A06D7378AEC3239DB71EDD4 /* RouteOverviewCell.swift */; };
+		448CDCD0397E4297B9F2994E /* RouteNavigationSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792012ACF6CB4DAD95840A00 /* RouteNavigationSheet.swift */; };
+		A513B292AFEF8E4E1BD51C94 /* ProhibitedRoadsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86956A2CC04AB2F7471101B /* ProhibitedRoadsCell.swift */; };
+		A57A16ACDA0FC9DA903459AB /* PermitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D10B51A1A937FE7A645710 /* PermitService.swift */; };
+		B062BEE5B4A10B170BBA0231 /* LoadInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066845C290B1B3B822C52E05 /* LoadInfoCell.swift */; };
+		B345DFF19AD47A1D93D8DCD5 /* VezuOversizeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9315644877F1FA29F2DF8F /* VezuOversizeApp.swift */; };
+		B4215DC0A706EB575F380652 /* PermitSummaryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE82F53426550F627236DA29 /* PermitSummaryResponse.swift */; };
+		B4CA033AAAC42C272AD71DAA /* PermitBriefViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19B0BB974CFE0A0C362844A /* PermitBriefViewModel.swift */; };
+		8E6657A74DA74DA194731938 /* RouteDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DF0C97E15F478CB467870F /* RouteDetailViewModel.swift */; };
+		B6EA71E676B351E543B5E3F0 /* BriefItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E28B7EB3295F0AE3C9C1488 /* BriefItemRow.swift */; };
+		B7F54129CDEEAA9D024E20ED /* PermitStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF01F4FF944C338060B4FE8 /* PermitStatus.swift */; };
+		B874C962801BDCDA3A3BE1EA /* PermitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE049CA433CC6125E6B3973 /* PermitManager.swift */; };
+		BDC9352FD16EA3F42AE8C5B0 /* PermitFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EF8E1C0CB993FDB9A35687 /* PermitFilter.swift */; };
+		BFC3E117DF21C62D2D6B7A03 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C271E3BCCC8D89009A30BAE8 /* InfoView.swift */; };
+		C367B5CB29D97DD3C608FCFD /* KeyRestrictionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238FADA46F761F969417B23C /* KeyRestrictionsCell.swift */; };
+		C69954115FF934C71A992E52 /* PermitRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFFC686C49234EB1AF253B4 /* PermitRowView.swift */; };
+		CBFA7EFA1DD3AA3DAF3D036B /* PermitSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C2674F665D5176ED8140C9 /* PermitSummary.swift */; };
+		CC4743D32C43ADAFC1254E89 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5E020BCA6CB2BDFAFEF08D /* Secrets.swift */; };
+		CDC7EBA24DB4834E90671E03 /* RouteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD430ACC03BC63B10E349CB /* RouteCell.swift */; };
+		D0A8688F5908E8788B9DE49A /* DocumentsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF95BC2B431A1FED0C32541 /* DocumentsCell.swift */; };
+		D18B1E9803FE8BC10D473D01 /* View+Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2763C990FA20AC14E7C6D863 /* View+Card.swift */; };
+		D5757067B439C6BB0DDD1F70 /* Decoder+EnumRawValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C52BCE96A68F0CE717D8E14 /* Decoder+EnumRawValue.swift */; };
+		D70E50008B492952601F66EB /* PermitBriefItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF795F0557E6225D8701777 /* PermitBriefItem.swift */; };
+		D71DAA0B8EC3CFF6ADD87819 /* AppTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2535ACFC22A81C743587F9 /* AppTab.swift */; };
+		D98955E0A83E8AC712177DA6 /* Double+Miles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059D8EA63CFE621FE5DDE0D8 /* Double+Miles.swift */; };
+		E0F9366D7282F730034D1F2E /* PermitSummaryAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E136C9E68F6A325C53649 /* PermitSummaryAnswer.swift */; };
+		E7184D89643D4E1085E7C604 /* ReviewNotesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DB2275B4EACE417D9B5893 /* ReviewNotesCell.swift */; };
+		EDE9C130A6585B12DFC5755C /* RequiredEquipmentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0234398F1D5F5C8A916EF9D /* RequiredEquipmentCell.swift */; };
+		F0D89E0393B1BBBB109E70EF /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D754D44791BFA461C7CEEB9B /* NetworkConstants.swift */; };
+		053497CB2B8448669B742CC1 /* StateCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D52CC0B68B4FAAB8940F23 /* StateCenter.swift */; };
+		B01B0FEA6A0444E3A8D878A3 /* Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20E4B4D82C6428E983FBA05 /* Distance.swift */; };
+		F2B994367AF6A5F2BC0F809C /* PermitRestriction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A322FD0561B446D67AB689 /* PermitRestriction.swift */; };
+		F6DE10E6DF3F858B73E29848 /* Color+Scheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF8569E3B1A658347DB73A5 /* Color+Scheme.swift */; };
+		F944049474483259A633CE97 /* PermitSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7AD264D41F9E26E19B5249 /* PermitSummaryCell.swift */; };
+		FBB548C6EAFAFFABB1843453 /* PermitFileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB9D265539205825E9338BA /* PermitFileService.swift */; };
+		6ADA51CD68DF4AC8A6F688A1 /* RouteJunctionShifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32875C75599A4C6583A8F24A /* RouteJunctionShifter.swift */; };
+		7514250CF3474B588B8348F3 /* GoogleMapsRouteLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F199614270834B7CAADCA175 /* GoogleMapsRouteLinks.swift */; };
+		C6134FC7FF02469292F57E3F /* RouteGeocodingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C95E79E99C48D1B36DD103 /* RouteGeocodingService.swift */; };
+		FC03B714CE299A35E5CEB6DE /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F30FD6024D19AA5E1A1DAD8 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		059D8EA63CFE621FE5DDE0D8 /* Double+Miles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Miles.swift"; sourceTree = "<group>"; };
+		066845C290B1B3B822C52E05 /* LoadInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadInfoCell.swift; sourceTree = "<group>"; };
+		096A44CE060261AD6BBFECB2 /* PermitBrief.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitBrief.swift; sourceTree = "<group>"; };
+		0E2C3A8678782CC23D3F4D68 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		16595F2C35E4EA343C935B92 /* PermitCriticalInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitCriticalInfo.swift; sourceTree = "<group>"; };
+		1E9315644877F1FA29F2DF8F /* VezuOversizeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VezuOversizeApp.swift; sourceTree = "<group>"; };
+		1FF795F0557E6225D8701777 /* PermitBriefItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitBriefItem.swift; sourceTree = "<group>"; };
+		238FADA46F761F969417B23C /* KeyRestrictionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyRestrictionsCell.swift; sourceTree = "<group>"; };
+		24C74C2DC1FCF79DAF90F58A /* PermitContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitContact.swift; sourceTree = "<group>"; };
+		25DB2275B4EACE417D9B5893 /* ReviewNotesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewNotesCell.swift; sourceTree = "<group>"; };
+		2763C990FA20AC14E7C6D863 /* View+Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Card.swift"; sourceTree = "<group>"; };
+		2B76B0596734597FB181EBCB /* SummarizePermitRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummarizePermitRequest.swift; sourceTree = "<group>"; };
+		5618863F091E447AA1A79450 /* LeadInRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadInRequest.swift; sourceTree = "<group>"; };
+		611FBF8A63004032BCA40DB1 /* PlaceQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceQuery.swift; sourceTree = "<group>"; };
+		4EF1C62DCC41425B9AFAED39 /* LeadInPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadInPoint.swift; sourceTree = "<group>"; };
+		12C60719DCBE4195B356EBCF /* MapCoordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCoordinate.swift; sourceTree = "<group>"; };
+		0C0D8A63C9CE49E99C8CF6C2 /* PlacesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesRequest.swift; sourceTree = "<group>"; };
+		2C3D7DFF826E59FEBCEAD051 /* Permit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permit.swift; sourceTree = "<group>"; };
+		2C8E3B234B3FD5CDC3A81146 /* VehicleInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleInfoCell.swift; sourceTree = "<group>"; };
+		32CA4899BE1669A991D93FD7 /* PermitEscortRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitEscortRule.swift; sourceTree = "<group>"; };
+		36B584B043E27DE0E688AB74 /* PermitFeeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitFeeCell.swift; sourceTree = "<group>"; };
+		3A06D7378AEC3239DB71EDD4 /* RouteOverviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteOverviewCell.swift; sourceTree = "<group>"; };
+		792012ACF6CB4DAD95840A00 /* RouteNavigationSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteNavigationSheet.swift; sourceTree = "<group>"; };
+		3C946B9636E61A239DB6D35A /* BriefIconRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefIconRow.swift; sourceTree = "<group>"; };
+		4688F18621A003D14A594494 /* AlertsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsCell.swift; sourceTree = "<group>"; };
+		49FD8218C2ACD30E392D583D /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		4FFF6B33894E7D442E8B6D5D /* PendingImport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendingImport.swift; sourceTree = "<group>"; };
+		5199476D3BFC3DBAD49CDA4D /* String+NilIfEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+NilIfEmpty.swift"; sourceTree = "<group>"; };
+		5762614B6E2D127C186B9892 /* AppBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBackgroundView.swift; sourceTree = "<group>"; };
+		58A322FD0561B446D67AB689 /* PermitRestriction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitRestriction.swift; sourceTree = "<group>"; };
+		5A2875DC70626129474E8248 /* PermitsEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitsEmptyStateView.swift; sourceTree = "<group>"; };
+		5AF8569E3B1A658347DB73A5 /* Color+Scheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Scheme.swift"; sourceTree = "<group>"; };
+		5C52BCE96A68F0CE717D8E14 /* Decoder+EnumRawValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decoder+EnumRawValue.swift"; sourceTree = "<group>"; };
+		5CE049CA433CC6125E6B3973 /* PermitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitManager.swift; sourceTree = "<group>"; };
+		5D318F6CC155AE0E465A9945 /* PermitSummaryEscort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitSummaryEscort.swift; sourceTree = "<group>"; };
 		5FA9868030745982004F6C65 /* VezuOversize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VezuOversize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FA9868E3074598A004F6C65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5FA986903074598A004F6C65 /* VezuOversizeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VezuOversizeApp.swift; sourceTree = "<group>"; };
 		5FA9869B30758040004F6C65 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5FA9869D307587C5004F6C65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5FA986A83075A1E1004F6C65 /* Color+Scheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Scheme.swift"; sourceTree = "<group>"; };
-		5FA986AC3075A68E004F6C65 /* AppBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBackgroundView.swift; sourceTree = "<group>"; };
-		5FA986B13075AF50004F6C65 /* PermitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitsView.swift; sourceTree = "<group>"; };
-		5FA986B33075AF58004F6C65 /* PermitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitsViewModel.swift; sourceTree = "<group>"; };
-		5FA986B63075BB73004F6C65 /* AppText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppText.swift; sourceTree = "<group>"; };
-		5FA986B83075BFBB004F6C65 /* PermitFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitFilter.swift; sourceTree = "<group>"; };
-		5FA986BA307981D4004F6C65 /* PermitStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitStatus.swift; sourceTree = "<group>"; };
-		5FA986BD30798244004F6C65 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
-		A10000000000000000000001 /* Permit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permit.swift; sourceTree = "<group>"; };
-		A10000000000000000000002 /* PermitsFilterPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitsFilterPicker.swift; sourceTree = "<group>"; };
-		A10000000000000000000003 /* PermitRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitRowView.swift; sourceTree = "<group>"; };
-		A10000000000000000000004 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
-		A10000000000000000000005 /* PermitsEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitsEmptyStateView.swift; sourceTree = "<group>"; };
-		A10000000000000000000006 /* PermitBrief.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitBrief.swift; sourceTree = "<group>"; };
-		A10000000000000000000007 /* PermitBriefViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitBriefViewModel.swift; sourceTree = "<group>"; };
-		A10000000000000000000008 /* PermitBriefView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitBriefView.swift; sourceTree = "<group>"; };
-		A10000000000000000000009 /* PermitSummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitSummaryCell.swift; sourceTree = "<group>"; };
-		A1000000000000000000000A /* PermitStatusBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitStatusBadge.swift; sourceTree = "<group>"; };
-		A10000000000000000000010 /* BriefSectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefSectionCell.swift; sourceTree = "<group>"; };
-		A10000000000000000000011 /* KeyRestrictionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyRestrictionsCell.swift; sourceTree = "<group>"; };
-		A10000000000000000000012 /* EscortRequirementsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscortRequirementsCell.swift; sourceTree = "<group>"; };
-		A10000000000000000000013 /* LoadInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadInfoCell.swift; sourceTree = "<group>"; };
-		A10000000000000000000014 /* VehicleInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleInfoCell.swift; sourceTree = "<group>"; };
-		A10000000000000000000015 /* PermitFeeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitFeeCell.swift; sourceTree = "<group>"; };
-		A10000000000000000000020 /* AlertsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsCell.swift; sourceTree = "<group>"; };
-		A10000000000000000000021 /* RouteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteCell.swift; sourceTree = "<group>"; };
-		A10000000000000000000022 /* RequiredEquipmentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequiredEquipmentCell.swift; sourceTree = "<group>"; };
-		A10000000000000000000023 /* DocumentsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsCell.swift; sourceTree = "<group>"; };
-		A10000000000000000000024 /* ContactsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsCell.swift; sourceTree = "<group>"; };
-		A10000000000000000000030 /* RouteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteDetailView.swift; sourceTree = "<group>"; };
-		A10000000000000000000031 /* Double+Miles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Miles.swift"; sourceTree = "<group>"; };
-		A10000000000000000000032 /* RouteOverviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteOverviewCell.swift; sourceTree = "<group>"; };
-		A10000000000000000000033 /* ProhibitedRoadsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProhibitedRoadsCell.swift; sourceTree = "<group>"; };
-		A10000000000000000000034 /* RouteDirectionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteDirectionsCell.swift; sourceTree = "<group>"; };
-		A10000000000000000000040 /* BriefInfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BriefInfoRow.swift"; sourceTree = "<group>"; };
-		A10000000000000000000041 /* BriefItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BriefItemRow.swift"; sourceTree = "<group>"; };
-		A10000000000000000000042 /* BriefIconRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BriefIconRow.swift"; sourceTree = "<group>"; };
-		A10000000000000000000043 /* Date+Range.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Range.swift"; sourceTree = "<group>"; };
-		A10000000000000000000044 /* View+Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Card.swift"; sourceTree = "<group>"; };
+		6889265495637CB8A9075513 /* PermitStatusBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitStatusBadge.swift; sourceTree = "<group>"; };
+		690693F6863C59E184EFFA2B /* PermitRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitRecord.swift; sourceTree = "<group>"; };
+		6C4A05F5EF393965754759F4 /* PermitSummaryContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitSummaryContact.swift; sourceTree = "<group>"; };
+		6C79801ADD001AAE8160CD48 /* PermitSummaryCritical.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitSummaryCritical.swift; sourceTree = "<group>"; };
+		6CDFFA3B40502852949BA43C /* PermitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitsView.swift; sourceTree = "<group>"; };
+		7153C6E63DAA4C099C24B2AE /* PermitVehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitVehicle.swift; sourceTree = "<group>"; };
+		72D10B51A1A937FE7A645710 /* PermitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitService.swift; sourceTree = "<group>"; };
+		78E875D80A43BD30FFF5AD15 /* ImportManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportManager.swift; sourceTree = "<group>"; };
+		7A2535ACFC22A81C743587F9 /* AppTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTab.swift; sourceTree = "<group>"; };
+		7CB9D265539205825E9338BA /* PermitFileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitFileService.swift; sourceTree = "<group>"; };
+		32875C75599A4C6583A8F24A /* RouteJunctionShifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteJunctionShifter.swift; sourceTree = "<group>"; };
+		F199614270834B7CAADCA175 /* GoogleMapsRouteLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapsRouteLinks.swift; sourceTree = "<group>"; };
+		36C95E79E99C48D1B36DD103 /* RouteGeocodingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteGeocodingService.swift; sourceTree = "<group>"; };
+		7D362D381C10210ACBA839B6 /* ContactsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsCell.swift; sourceTree = "<group>"; };
+		7FDA91F4C9C86EE45E24B06A /* PermitSummaryLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitSummaryLoad.swift; sourceTree = "<group>"; };
+		88D6296CE87D05F283B7C366 /* AppText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppText.swift; sourceTree = "<group>"; };
+		89C2674F665D5176ED8140C9 /* PermitSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitSummary.swift; sourceTree = "<group>"; };
+		8A03A734C9F4982322C9E5D1 /* PermitSummaryRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitSummaryRoute.swift; sourceTree = "<group>"; };
+		C7DA1CF038604914AA36B62E /* PermitRouteResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitRouteResponse.swift; sourceTree = "<group>"; };
+		7D109F32723A4A69AA6A4599 /* LeadInResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadInResponse.swift; sourceTree = "<group>"; };
+		DB752B92249F4004ABC2033D /* PlacesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesResponse.swift; sourceTree = "<group>"; };
+		AF463AF5C1E94CBAB331DC5E /* PlaceResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceResult.swift; sourceTree = "<group>"; };
+		4C055606D61B47A19EE5D657 /* PermitDetailedRouteStepSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitDetailedRouteStepSummary.swift; sourceTree = "<group>"; };
+		C03CCEDB46114B1D9DFA9879 /* PermitDetailedRouteSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitDetailedRouteSummary.swift; sourceTree = "<group>"; };
+		8AD430ACC03BC63B10E349CB /* RouteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteCell.swift; sourceTree = "<group>"; };
+		8AF4682E4F3F41BED6D13C3B /* PermitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitsViewModel.swift; sourceTree = "<group>"; };
+		8DBA33A8F1C697B6760B431D /* PermitFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitFile.swift; sourceTree = "<group>"; };
+		8E28B7EB3295F0AE3C9C1488 /* BriefItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefItemRow.swift; sourceTree = "<group>"; };
+		917E726DEEFBC4B56ED97DF8 /* BriefInfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefInfoRow.swift; sourceTree = "<group>"; };
+		94503D2A14A581339EE1B4EB /* RouteDirectionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteDirectionsCell.swift; sourceTree = "<group>"; };
+		952768F0905EE27348E9DBFB /* PermitsFilterPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitsFilterPicker.swift; sourceTree = "<group>"; };
+		9AB65FC4D920AABBF36E0DB8 /* PermitRouteStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitRouteStep.swift; sourceTree = "<group>"; };
+		67A78F50A4CD44BAB1CAE850 /* PermitDetailedRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitDetailedRoute.swift; sourceTree = "<group>"; };
+		B72488700DDB474D8DAAB4FC /* RouteWaypoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteWaypoint.swift; sourceTree = "<group>"; };
+		CA0D5664AE8349DE9D2150A3 /* MapMatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapMatch.swift; sourceTree = "<group>"; };
+		8F22A116FAEA463E99DE5E90 /* RouteGeocodingHint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteGeocodingHint.swift; sourceTree = "<group>"; };
+		6629468B583745E28E508679 /* RouteGeocodingQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteGeocodingQuery.swift; sourceTree = "<group>"; };
+		15BBDA7BCB1842A1AF93D9F1 /* RouteDetailState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteDetailState.swift; sourceTree = "<group>"; };
+		9AF01F4FF944C338060B4FE8 /* PermitStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitStatus.swift; sourceTree = "<group>"; };
+		9F30FD6024D19AA5E1A1DAD8 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		A300B1A3752E5C28E51F7B32 /* PermitLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitLoad.swift; sourceTree = "<group>"; };
+		A30F8CA264BAB82A38A4F785 /* PermitSummaryChecks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitSummaryChecks.swift; sourceTree = "<group>"; };
+		A7A379382E0F87EFEB315B81 /* PermitSummaryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitSummaryItem.swift; sourceTree = "<group>"; };
+		A7EE3A404E7D065F06514BD9 /* Date+Range.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Range.swift"; sourceTree = "<group>"; };
+		B0234398F1D5F5C8A916EF9D /* RequiredEquipmentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequiredEquipmentCell.swift; sourceTree = "<group>"; };
+		B76E136C9E68F6A325C53649 /* PermitSummaryAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitSummaryAnswer.swift; sourceTree = "<group>"; };
+		B8D19DAD451BE8DEEE2597C6 /* BriefSectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefSectionCell.swift; sourceTree = "<group>"; };
+		BC7AD264D41F9E26E19B5249 /* PermitSummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitSummaryCell.swift; sourceTree = "<group>"; };
+		BCFFC686C49234EB1AF253B4 /* PermitRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitRowView.swift; sourceTree = "<group>"; };
+		C271E3BCCC8D89009A30BAE8 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		C430FEB9E29589898ECD874D /* PermitSummaryRouteStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitSummaryRouteStep.swift; sourceTree = "<group>"; };
+		C56DEE3F4D9A6DFB8E671A29 /* PendingImportRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendingImportRow.swift; sourceTree = "<group>"; };
+		C6EF8E1C0CB993FDB9A35687 /* PermitFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitFilter.swift; sourceTree = "<group>"; };
+		CA59289E6BDD197F64557180 /* RouteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteDetailView.swift; sourceTree = "<group>"; };
+		CC5E020BCA6CB2BDFAFEF08D /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		CFD137BAFD2C7C3DDBF03CF2 /* PermitRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitRoute.swift; sourceTree = "<group>"; };
+		D19B0BB974CFE0A0C362844A /* PermitBriefViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitBriefViewModel.swift; sourceTree = "<group>"; };
+		98DF0C97E15F478CB467870F /* RouteDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteDetailViewModel.swift; sourceTree = "<group>"; };
+		D50E070874403C1EA7ACC62F /* PermitSummaryRestriction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitSummaryRestriction.swift; sourceTree = "<group>"; };
+		D754D44791BFA461C7CEEB9B /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		05D52CC0B68B4FAAB8940F23 /* StateCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateCenter.swift; sourceTree = "<group>"; };
+		B20E4B4D82C6428E983FBA05 /* Distance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Distance.swift; sourceTree = "<group>"; };
+		D86956A2CC04AB2F7471101B /* ProhibitedRoadsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProhibitedRoadsCell.swift; sourceTree = "<group>"; };
+		D8FE19C1E90EF0B327DBBD46 /* PermitBriefView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitBriefView.swift; sourceTree = "<group>"; };
+		DA417CCB6B8678C40181B8E2 /* PermitSummaryVehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitSummaryVehicle.swift; sourceTree = "<group>"; };
+		DDA495B1AF36DDD83F6C2728 /* APIPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIPath.swift; sourceTree = "<group>"; };
+		E5C27F88858A55CE065856FF /* PermitCriticalAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitCriticalAnswer.swift; sourceTree = "<group>"; };
+		FE82F53426550F627236DA29 /* PermitSummaryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitSummaryResponse.swift; sourceTree = "<group>"; };
+		FFF95BC2B431A1FED0C32541 /* DocumentsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +237,148 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FC0DCF53778F7EC97BA4A17 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				78E875D80A43BD30FFF5AD15 /* ImportManager.swift */,
+				5CE049CA433CC6125E6B3973 /* PermitManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		1AE1CC3C11F1602A3B309012 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				DDA495B1AF36DDD83F6C2728 /* APIPath.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		1E39133965AFA6B29F5894C9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9F30FD6024D19AA5E1A1DAD8 /* NetworkService.swift */,
+				7CB9D265539205825E9338BA /* PermitFileService.swift */,
+				32875C75599A4C6583A8F24A /* RouteJunctionShifter.swift */,
+				F199614270834B7CAADCA175 /* GoogleMapsRouteLinks.swift */,
+				36C95E79E99C48D1B36DD103 /* RouteGeocodingService.swift */,
+				72D10B51A1A937FE7A645710 /* PermitService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		290471F0F336B5A44EECD4F2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9C6B261243E9621FBDC60E31 /* Subviews */,
+				6CDFFA3B40502852949BA43C /* PermitsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2B47353452D13614D25BBB62 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				49FD8218C2ACD30E392D583D /* AppError.swift */,
+				7A2535ACFC22A81C743587F9 /* AppTab.swift */,
+				88D6296CE87D05F283B7C366 /* AppText.swift */,
+				D754D44791BFA461C7CEEB9B /* NetworkConstants.swift */,
+				05D52CC0B68B4FAAB8940F23 /* StateCenter.swift */,
+				B20E4B4D82C6428E983FBA05 /* Distance.swift */,
+				CC5E020BCA6CB2BDFAFEF08D /* Secrets.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		35D315DEBBF45F223B169A61 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				1AE1CC3C11F1602A3B309012 /* API */,
+				0FC0DCF53778F7EC97BA4A17 /* Managers */,
+				1E39133965AFA6B29F5894C9 /* Services */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		438EA7F0F1A9F81F34443BA3 /* Brief */ = {
+			isa = PBXGroup;
+			children = (
+				4688F18621A003D14A594494 /* AlertsCell.swift */,
+				7D362D381C10210ACBA839B6 /* ContactsCell.swift */,
+				FFF95BC2B431A1FED0C32541 /* DocumentsCell.swift */,
+				238FADA46F761F969417B23C /* KeyRestrictionsCell.swift */,
+				066845C290B1B3B822C52E05 /* LoadInfoCell.swift */,
+				36B584B043E27DE0E688AB74 /* PermitFeeCell.swift */,
+				BC7AD264D41F9E26E19B5249 /* PermitSummaryCell.swift */,
+				B0234398F1D5F5C8A916EF9D /* RequiredEquipmentCell.swift */,
+				25DB2275B4EACE417D9B5893 /* ReviewNotesCell.swift */,
+				8AD430ACC03BC63B10E349CB /* RouteCell.swift */,
+				2C8E3B234B3FD5CDC3A81146 /* VehicleInfoCell.swift */,
+			);
+			path = Brief;
+			sourceTree = "<group>";
+		};
+		47F99B69D253880D73F61D57 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3C946B9636E61A239DB6D35A /* BriefIconRow.swift */,
+				917E726DEEFBC4B56ED97DF8 /* BriefInfoRow.swift */,
+				8E28B7EB3295F0AE3C9C1488 /* BriefItemRow.swift */,
+				B8D19DAD451BE8DEEE2597C6 /* BriefSectionCell.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		48D89C42E3CCB03CE5A051C8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8AF4682E4F3F41BED6D13C3B /* PermitsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4C13975F94BE5909C12B711D /* PermitBrief */ = {
+			isa = PBXGroup;
+			children = (
+				6BAD896EAEBD96D52F83DD1E /* ViewModels */,
+				56D89DD146126B417CDC53AE /* Views */,
+			);
+			path = PermitBrief;
+			sourceTree = "<group>";
+		};
+		54D50BA7462606D470F90771 /* Permit */ = {
+			isa = PBXGroup;
+			children = (
+				4FFF6B33894E7D442E8B6D5D /* PendingImport.swift */,
+				2C3D7DFF826E59FEBCEAD051 /* Permit.swift */,
+				C6EF8E1C0CB993FDB9A35687 /* PermitFilter.swift */,
+				690693F6863C59E184EFFA2B /* PermitRecord.swift */,
+				9AF01F4FF944C338060B4FE8 /* PermitStatus.swift */,
+			);
+			path = Permit;
+			sourceTree = "<group>";
+		};
+		56D89DD146126B417CDC53AE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8340EA299B856BE93B9C0FA8 /* Subviews */,
+				D8FE19C1E90EF0B327DBBD46 /* PermitBriefView.swift */,
+				CA59289E6BDD197F64557180 /* RouteDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5BE14B08D4A5F99388B11635 /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				D86956A2CC04AB2F7471101B /* ProhibitedRoadsCell.swift */,
+				94503D2A14A581339EE1B4EB /* RouteDirectionsCell.swift */,
+				3A06D7378AEC3239DB71EDD4 /* RouteOverviewCell.swift */,
+				792012ACF6CB4DAD95840A00 /* RouteNavigationSheet.swift */,
+			);
+			path = Route;
+			sourceTree = "<group>";
+		};
 		5FA9867730745982004F6C65 = {
 			isa = PBXGroup;
 			children = (
@@ -128,235 +398,237 @@
 		5FA986913074598A004F6C65 /* VezuOversize */ = {
 			isa = PBXGroup;
 			children = (
-				5FA9869A30745A60004F6C65 /* App */,
-				5FA9869930745A59004F6C65 /* Features */,
-				5FA9869830745A53004F6C65 /* Shared */,
-				5FA9869730745A4E004F6C65 /* Core */,
-				5FA9869630745A49004F6C65 /* Models */,
-				5FA9869530745A42004F6C65 /* Resources */,
+				D1D0524B025E57AFFF263442 /* App */,
+				35D315DEBBF45F223B169A61 /* Core */,
+				984D844B917CCD4C29DE2A97 /* Features */,
+				A1C86A29E589D48EC70B6A32 /* Models */,
+				887A6F90336FF23D95C3914B /* Resources */,
+				B46A6AFB1DC88CE23F6E63F1 /* Shared */,
 			);
 			path = VezuOversize;
 			sourceTree = "<group>";
 		};
-		5FA9869530745A42004F6C65 /* Resources */ = {
+		61C0DF9D4EA5996D2FA9982A /* Info */ = {
 			isa = PBXGroup;
 			children = (
-				5FA9869D307587C5004F6C65 /* Info.plist */,
+				A92E4D568FEACFEBFDBE9B97 /* Views */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		6BAD896EAEBD96D52F83DD1E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D19B0BB974CFE0A0C362844A /* PermitBriefViewModel.swift */,
+				98DF0C97E15F478CB467870F /* RouteDetailViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		71B0148FE713C3F5428A554E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				61C0DF9D4EA5996D2FA9982A /* Info */,
+				89F28E2EDEDBFB98042509EF /* MainTabBar */,
+				4C13975F94BE5909C12B711D /* PermitBrief */,
+				941A2B5C6AA00745C34CD49B /* Permits */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		71F38F9B08EE0343EFA0F28F /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				89C2674F665D5176ED8140C9 /* PermitSummary.swift */,
+				B76E136C9E68F6A325C53649 /* PermitSummaryAnswer.swift */,
+				A30F8CA264BAB82A38A4F785 /* PermitSummaryChecks.swift */,
+				6C4A05F5EF393965754759F4 /* PermitSummaryContact.swift */,
+				6C79801ADD001AAE8160CD48 /* PermitSummaryCritical.swift */,
+				5D318F6CC155AE0E465A9945 /* PermitSummaryEscort.swift */,
+				A7A379382E0F87EFEB315B81 /* PermitSummaryItem.swift */,
+				7FDA91F4C9C86EE45E24B06A /* PermitSummaryLoad.swift */,
+				FE82F53426550F627236DA29 /* PermitSummaryResponse.swift */,
+				D50E070874403C1EA7ACC62F /* PermitSummaryRestriction.swift */,
+				8A03A734C9F4982322C9E5D1 /* PermitSummaryRoute.swift */,
+				C7DA1CF038604914AA36B62E /* PermitRouteResponse.swift */,
+				7D109F32723A4A69AA6A4599 /* LeadInResponse.swift */,
+				DB752B92249F4004ABC2033D /* PlacesResponse.swift */,
+				AF463AF5C1E94CBAB331DC5E /* PlaceResult.swift */,
+				4C055606D61B47A19EE5D657 /* PermitDetailedRouteStepSummary.swift */,
+				C03CCEDB46114B1D9DFA9879 /* PermitDetailedRouteSummary.swift */,
+				C430FEB9E29589898ECD874D /* PermitSummaryRouteStep.swift */,
+				DA417CCB6B8678C40181B8E2 /* PermitSummaryVehicle.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		8340EA299B856BE93B9C0FA8 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				438EA7F0F1A9F81F34443BA3 /* Brief */,
+				47F99B69D253880D73F61D57 /* Common */,
+				5BE14B08D4A5F99388B11635 /* Route */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		887A6F90336FF23D95C3914B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				5FA9868E3074598A004F6C65 /* Assets.xcassets */,
+				5FA9869D307587C5004F6C65 /* Info.plist */,
 				5FA9869B30758040004F6C65 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		5FA9869630745A49004F6C65 /* Models */ = {
+		89F28E2EDEDBFB98042509EF /* MainTabBar */ = {
 			isa = PBXGroup;
 			children = (
-				A10000000000000000000006 /* PermitBrief.swift */,
-				A10000000000000000000001 /* Permit.swift */,
-				5FA986B83075BFBB004F6C65 /* PermitFilter.swift */,
-				5FA986BA307981D4004F6C65 /* PermitStatus.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		5FA9869730745A4E004F6C65 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		5FA9869830745A53004F6C65 /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-				A30000000000000000000006 /* Components */,
-				5FA986B53075BB6B004F6C65 /* Constants */,
-				5FA986A63075A178004F6C65 /* Design */,
-				A3000000000000000000000B /* Extensions */,
-			);
-			path = Shared;
-			sourceTree = "<group>";
-		};
-		5FA9869930745A59004F6C65 /* Features */ = {
-			isa = PBXGroup;
-			children = (
-				5FA986BC30798234004F6C65 /* MainTabBar */,
-				5FA986AE3075AF2B004F6C65 /* PermitsList */,
-				A30000000000000000000003 /* PermitBrief */,
-				A30000000000000000000001 /* Info */,
-			);
-			path = Features;
-			sourceTree = "<group>";
-		};
-		5FA9869A30745A60004F6C65 /* App */ = {
-			isa = PBXGroup;
-			children = (
-				5FA986903074598A004F6C65 /* VezuOversizeApp.swift */,
-			);
-			path = App;
-			sourceTree = "<group>";
-		};
-		5FA986A63075A178004F6C65 /* Design */ = {
-			isa = PBXGroup;
-			children = (
-				5FA986A83075A1E1004F6C65 /* Color+Scheme.swift */,
-				5FA986AC3075A68E004F6C65 /* AppBackgroundView.swift */,
-			);
-			path = Design;
-			sourceTree = "<group>";
-		};
-		5FA986AE3075AF2B004F6C65 /* PermitsList */ = {
-			isa = PBXGroup;
-			children = (
-				5FA986B03075AF39004F6C65 /* Views */,
-				5FA986AF3075AF33004F6C65 /* ViewModels */,
-			);
-			path = PermitsList;
-			sourceTree = "<group>";
-		};
-		5FA986AF3075AF33004F6C65 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				5FA986B33075AF58004F6C65 /* PermitsViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		5FA986B03075AF39004F6C65 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				5FA986B13075AF50004F6C65 /* PermitsView.swift */,
-				A10000000000000000000003 /* PermitRowView.swift */,
-				A10000000000000000000002 /* PermitsFilterPicker.swift */,
-				A10000000000000000000005 /* PermitsEmptyStateView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		5FA986B53075BB6B004F6C65 /* Constants */ = {
-			isa = PBXGroup;
-			children = (
-				5FA986B63075BB73004F6C65 /* AppText.swift */,
-			);
-			path = Constants;
-			sourceTree = "<group>";
-		};
-		5FA986BC30798234004F6C65 /* MainTabBar */ = {
-			isa = PBXGroup;
-			children = (
-				5FA986BD30798244004F6C65 /* MainTabView.swift */,
+				0E2C3A8678782CC23D3F4D68 /* MainTabView.swift */,
 			);
 			path = MainTabBar;
 			sourceTree = "<group>";
 		};
-		A30000000000000000000001 /* Info */ = {
+		941A2B5C6AA00745C34CD49B /* Permits */ = {
 			isa = PBXGroup;
 			children = (
-				A30000000000000000000002 /* Views */,
+				48D89C42E3CCB03CE5A051C8 /* ViewModels */,
+				290471F0F336B5A44EECD4F2 /* Views */,
 			);
-			path = Info;
+			path = Permits;
 			sourceTree = "<group>";
 		};
-		A30000000000000000000002 /* Views */ = {
+		984D844B917CCD4C29DE2A97 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				A10000000000000000000004 /* InfoView.swift */,
+				71B0148FE713C3F5428A554E /* Main */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		9C6B261243E9621FBDC60E31 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				C56DEE3F4D9A6DFB8E671A29 /* PendingImportRow.swift */,
+				BCFFC686C49234EB1AF253B4 /* PermitRowView.swift */,
+				5A2875DC70626129474E8248 /* PermitsEmptyStateView.swift */,
+				952768F0905EE27348E9DBFB /* PermitsFilterPicker.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		9D958B6B3100E9AA06680E5B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F5683433C4C2AFEFAE9FCA43 /* Foundation */,
+				FFE3D3DB58D3B7E9E25A4624 /* SwiftUI */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A1C86A29E589D48EC70B6A32 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				54D50BA7462606D470F90771 /* Permit */,
+				EAB343ABEA240A6B9394C63E /* PermitBrief */,
+				D33F660BC3143A392C13543E /* Requests */,
+				71F38F9B08EE0343EFA0F28F /* Responses */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A92E4D568FEACFEBFDBE9B97 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C271E3BCCC8D89009A30BAE8 /* InfoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		A30000000000000000000003 /* PermitBrief */ = {
+		B46A6AFB1DC88CE23F6E63F1 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				A30000000000000000000004 /* Views */,
-				A30000000000000000000005 /* ViewModels */,
+				D893723842785C94B6717501 /* Components */,
+				2B47353452D13614D25BBB62 /* Constants */,
+				9D958B6B3100E9AA06680E5B /* Extensions */,
 			);
-			path = PermitBrief;
+			path = Shared;
 			sourceTree = "<group>";
 		};
-		A30000000000000000000004 /* Views */ = {
+		D1D0524B025E57AFFF263442 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				A30000000000000000000007 /* Cells */,
-				A10000000000000000000008 /* PermitBriefView.swift */,
-				A10000000000000000000030 /* RouteDetailView.swift */,
+				1E9315644877F1FA29F2DF8F /* VezuOversizeApp.swift */,
 			);
-			path = Views;
+			path = App;
 			sourceTree = "<group>";
 		};
-		A30000000000000000000005 /* ViewModels */ = {
+		D33F660BC3143A392C13543E /* Requests */ = {
 			isa = PBXGroup;
 			children = (
-				A10000000000000000000007 /* PermitBriefViewModel.swift */,
+				8DBA33A8F1C697B6760B431D /* PermitFile.swift */,
+				2B76B0596734597FB181EBCB /* SummarizePermitRequest.swift */,
+				5618863F091E447AA1A79450 /* LeadInRequest.swift */,
+				611FBF8A63004032BCA40DB1 /* PlaceQuery.swift */,
+				4EF1C62DCC41425B9AFAED39 /* LeadInPoint.swift */,
+				12C60719DCBE4195B356EBCF /* MapCoordinate.swift */,
+				0C0D8A63C9CE49E99C8CF6C2 /* PlacesRequest.swift */,
 			);
-			path = ViewModels;
+			path = Requests;
 			sourceTree = "<group>";
 		};
-		A30000000000000000000006 /* Components */ = {
+		D893723842785C94B6717501 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				A1000000000000000000000A /* PermitStatusBadge.swift */,
+				5762614B6E2D127C186B9892 /* AppBackgroundView.swift */,
+				6889265495637CB8A9075513 /* PermitStatusBadge.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
 		};
-		A30000000000000000000007 /* Cells */ = {
+		EAB343ABEA240A6B9394C63E /* PermitBrief */ = {
 			isa = PBXGroup;
 			children = (
-				A30000000000000000000008 /* Common */,
-				A30000000000000000000009 /* Brief */,
-				A3000000000000000000000A /* Route */,
+				096A44CE060261AD6BBFECB2 /* PermitBrief.swift */,
+				1FF795F0557E6225D8701777 /* PermitBriefItem.swift */,
+				24C74C2DC1FCF79DAF90F58A /* PermitContact.swift */,
+				E5C27F88858A55CE065856FF /* PermitCriticalAnswer.swift */,
+				16595F2C35E4EA343C935B92 /* PermitCriticalInfo.swift */,
+				32CA4899BE1669A991D93FD7 /* PermitEscortRule.swift */,
+				A300B1A3752E5C28E51F7B32 /* PermitLoad.swift */,
+				58A322FD0561B446D67AB689 /* PermitRestriction.swift */,
+				CFD137BAFD2C7C3DDBF03CF2 /* PermitRoute.swift */,
+				9AB65FC4D920AABBF36E0DB8 /* PermitRouteStep.swift */,
+				67A78F50A4CD44BAB1CAE850 /* PermitDetailedRoute.swift */,
+				B72488700DDB474D8DAAB4FC /* RouteWaypoint.swift */,
+				CA0D5664AE8349DE9D2150A3 /* MapMatch.swift */,
+				8F22A116FAEA463E99DE5E90 /* RouteGeocodingHint.swift */,
+				6629468B583745E28E508679 /* RouteGeocodingQuery.swift */,
+				15BBDA7BCB1842A1AF93D9F1 /* RouteDetailState.swift */,
+				7153C6E63DAA4C099C24B2AE /* PermitVehicle.swift */,
 			);
-			path = Cells;
+			path = PermitBrief;
 			sourceTree = "<group>";
 		};
-		A30000000000000000000008 /* Common */ = {
+		F5683433C4C2AFEFAE9FCA43 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				A10000000000000000000040 /* BriefInfoRow.swift */,
-				A10000000000000000000041 /* BriefItemRow.swift */,
-				A10000000000000000000042 /* BriefIconRow.swift */,
-				A10000000000000000000010 /* BriefSectionCell.swift */,
+				A7EE3A404E7D065F06514BD9 /* Date+Range.swift */,
+				5C52BCE96A68F0CE717D8E14 /* Decoder+EnumRawValue.swift */,
+				059D8EA63CFE621FE5DDE0D8 /* Double+Miles.swift */,
+				5199476D3BFC3DBAD49CDA4D /* String+NilIfEmpty.swift */,
 			);
-			path = Common;
+			path = Foundation;
 			sourceTree = "<group>";
 		};
-		A30000000000000000000009 /* Brief */ = {
+		FFE3D3DB58D3B7E9E25A4624 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				A10000000000000000000009 /* PermitSummaryCell.swift */,
-				A10000000000000000000011 /* KeyRestrictionsCell.swift */,
-				A10000000000000000000012 /* EscortRequirementsCell.swift */,
-				A10000000000000000000021 /* RouteCell.swift */,
-				A10000000000000000000020 /* AlertsCell.swift */,
-				A10000000000000000000013 /* LoadInfoCell.swift */,
-				A10000000000000000000014 /* VehicleInfoCell.swift */,
-				A10000000000000000000022 /* RequiredEquipmentCell.swift */,
-				A10000000000000000000023 /* DocumentsCell.swift */,
-				A10000000000000000000024 /* ContactsCell.swift */,
-				A10000000000000000000015 /* PermitFeeCell.swift */,
+				5AF8569E3B1A658347DB73A5 /* Color+Scheme.swift */,
+				2763C990FA20AC14E7C6D863 /* View+Card.swift */,
 			);
-			path = Brief;
-			sourceTree = "<group>";
-		};
-		A3000000000000000000000A /* Route */ = {
-			isa = PBXGroup;
-			children = (
-				A10000000000000000000032 /* RouteOverviewCell.swift */,
-				A10000000000000000000033 /* ProhibitedRoadsCell.swift */,
-				A10000000000000000000034 /* RouteDirectionsCell.swift */,
-			);
-			path = Route;
-			sourceTree = "<group>";
-		};
-		A3000000000000000000000B /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				A10000000000000000000031 /* Double+Miles.swift */,
-				A10000000000000000000043 /* Date+Range.swift */,
-				A10000000000000000000044 /* View+Card.swift */,
-			);
-			path = Extensions;
+			path = SwiftUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -431,46 +703,110 @@
 		5FA9867C30745982004F6C65 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
-				A20000000000000000000040 /* BriefInfoRow.swift in Sources */,
-				A20000000000000000000041 /* BriefItemRow.swift in Sources */,
-				A20000000000000000000042 /* BriefIconRow.swift in Sources */,
-				A20000000000000000000043 /* Date+Range.swift in Sources */,
-				A20000000000000000000044 /* View+Card.swift in Sources */,
-				A20000000000000000000031 /* Double+Miles.swift in Sources */,
-				A20000000000000000000032 /* RouteOverviewCell.swift in Sources */,
-				A20000000000000000000033 /* ProhibitedRoadsCell.swift in Sources */,
-				A20000000000000000000034 /* RouteDirectionsCell.swift in Sources */,
-				A20000000000000000000030 /* RouteDetailView.swift in Sources */,
-				A20000000000000000000020 /* AlertsCell.swift in Sources */,
-				A20000000000000000000021 /* RouteCell.swift in Sources */,
-				A20000000000000000000022 /* RequiredEquipmentCell.swift in Sources */,
-				A20000000000000000000023 /* DocumentsCell.swift in Sources */,
-				A20000000000000000000024 /* ContactsCell.swift in Sources */,
-				A20000000000000000000010 /* BriefSectionCell.swift in Sources */,
-				A20000000000000000000011 /* KeyRestrictionsCell.swift in Sources */,
-				A20000000000000000000012 /* EscortRequirementsCell.swift in Sources */,
-				A20000000000000000000013 /* LoadInfoCell.swift in Sources */,
-				A20000000000000000000014 /* VehicleInfoCell.swift in Sources */,
-				A20000000000000000000015 /* PermitFeeCell.swift in Sources */,
-				A2000000000000000000000A /* PermitStatusBadge.swift in Sources */,
-				A20000000000000000000009 /* PermitSummaryCell.swift in Sources */,
-				A20000000000000000000006 /* PermitBrief.swift in Sources */,
-				A20000000000000000000007 /* PermitBriefViewModel.swift in Sources */,
-				A20000000000000000000008 /* PermitBriefView.swift in Sources */,
-				A20000000000000000000005 /* PermitsEmptyStateView.swift in Sources */,
-				A20000000000000000000001 /* Permit.swift in Sources */,
-				A20000000000000000000002 /* PermitsFilterPicker.swift in Sources */,
-				5FA986B73075BB73004F6C65 /* AppText.swift in Sources */,
-				5FA986B93075BFBB004F6C65 /* PermitFilter.swift in Sources */,
-				A20000000000000000000003 /* PermitRowView.swift in Sources */,
-				A20000000000000000000004 /* InfoView.swift in Sources */,
-				5FA986943074598A004F6C65 /* VezuOversizeApp.swift in Sources */,
-				5FA986A93075A1E1004F6C65 /* Color+Scheme.swift in Sources */,
-				5FA986AD3075A68E004F6C65 /* AppBackgroundView.swift in Sources */,
-				5FA986B23075AF50004F6C65 /* PermitsView.swift in Sources */,
-				5FA986BE30798244004F6C65 /* MainTabView.swift in Sources */,
-				5FA986BB307981D4004F6C65 /* PermitStatus.swift in Sources */,
-				5FA986B43075AF58004F6C65 /* PermitsViewModel.swift in Sources */,
+				B345DFF19AD47A1D93D8DCD5 /* VezuOversizeApp.swift in Sources */,
+				08221BE9F632BE40B29BA32F /* APIPath.swift in Sources */,
+				95254E49D5C4E57078AA0444 /* ImportManager.swift in Sources */,
+				B874C962801BDCDA3A3BE1EA /* PermitManager.swift in Sources */,
+				FC03B714CE299A35E5CEB6DE /* NetworkService.swift in Sources */,
+				FBB548C6EAFAFFABB1843453 /* PermitFileService.swift in Sources */,
+				6ADA51CD68DF4AC8A6F688A1 /* RouteJunctionShifter.swift in Sources */,
+				7514250CF3474B588B8348F3 /* GoogleMapsRouteLinks.swift in Sources */,
+				C6134FC7FF02469292F57E3F /* RouteGeocodingService.swift in Sources */,
+				A57A16ACDA0FC9DA903459AB /* PermitService.swift in Sources */,
+				BFC3E117DF21C62D2D6B7A03 /* InfoView.swift in Sources */,
+				02FDD1046837CBF1ECBF5BAD /* MainTabView.swift in Sources */,
+				B4CA033AAAC42C272AD71DAA /* PermitBriefViewModel.swift in Sources */,
+				8E6657A74DA74DA194731938 /* RouteDetailViewModel.swift in Sources */,
+				135C1469266D0E240DF0BC48 /* AlertsCell.swift in Sources */,
+				7098576AEC53FA07085DCA6D /* ContactsCell.swift in Sources */,
+				D0A8688F5908E8788B9DE49A /* DocumentsCell.swift in Sources */,
+				C367B5CB29D97DD3C608FCFD /* KeyRestrictionsCell.swift in Sources */,
+				B062BEE5B4A10B170BBA0231 /* LoadInfoCell.swift in Sources */,
+				9850F61F70A36B5DF0435436 /* PermitFeeCell.swift in Sources */,
+				F944049474483259A633CE97 /* PermitSummaryCell.swift in Sources */,
+				EDE9C130A6585B12DFC5755C /* RequiredEquipmentCell.swift in Sources */,
+				E7184D89643D4E1085E7C604 /* ReviewNotesCell.swift in Sources */,
+				CDC7EBA24DB4834E90671E03 /* RouteCell.swift in Sources */,
+				34A00BE8DEE71E5883B6961F /* VehicleInfoCell.swift in Sources */,
+				6B26B9B998B20BCE9F081AB9 /* BriefIconRow.swift in Sources */,
+				41DA1E3BAF852685162DE417 /* BriefInfoRow.swift in Sources */,
+				B6EA71E676B351E543B5E3F0 /* BriefItemRow.swift in Sources */,
+				9BBE4A1E1AC8B3D47FA5D55F /* BriefSectionCell.swift in Sources */,
+				A513B292AFEF8E4E1BD51C94 /* ProhibitedRoadsCell.swift in Sources */,
+				763CDDCEA91BA717E78BA472 /* RouteDirectionsCell.swift in Sources */,
+				A36F1B61635A81424D3828F3 /* RouteOverviewCell.swift in Sources */,
+				448CDCD0397E4297B9F2994E /* RouteNavigationSheet.swift in Sources */,
+				01D14BD25BC7568B0CF74BAF /* PermitBriefView.swift in Sources */,
+				A2160370940A1B3556637C66 /* RouteDetailView.swift in Sources */,
+				28B0FD85BA619A1EB1106524 /* PermitsViewModel.swift in Sources */,
+				3E3FCEEF7187E6EE1D195999 /* PendingImportRow.swift in Sources */,
+				C69954115FF934C71A992E52 /* PermitRowView.swift in Sources */,
+				0F13C054CD7C1F65C082A9BB /* PermitsEmptyStateView.swift in Sources */,
+				9D2CD5D4C90568BB03320A42 /* PermitsFilterPicker.swift in Sources */,
+				125625061AFF0D29CFB3D247 /* PermitsView.swift in Sources */,
+				4F41202EDF44AEF224808160 /* PendingImport.swift in Sources */,
+				805C5FDA29631EE60AB8F971 /* Permit.swift in Sources */,
+				BDC9352FD16EA3F42AE8C5B0 /* PermitFilter.swift in Sources */,
+				76036B7E6E53189E3C73DE3C /* PermitRecord.swift in Sources */,
+				B7F54129CDEEAA9D024E20ED /* PermitStatus.swift in Sources */,
+				9150747919172B8E3BCE53B7 /* PermitBrief.swift in Sources */,
+				D70E50008B492952601F66EB /* PermitBriefItem.swift in Sources */,
+				4F824315B3152A3346A2110F /* PermitContact.swift in Sources */,
+				31D795A43E970EA28963B783 /* PermitCriticalAnswer.swift in Sources */,
+				1679CFFFFC7F50349751741A /* PermitCriticalInfo.swift in Sources */,
+				9C58EEC77D7F19B2A787C2F1 /* PermitEscortRule.swift in Sources */,
+				9770A0A1071341E9B913E53B /* PermitLoad.swift in Sources */,
+				F2B994367AF6A5F2BC0F809C /* PermitRestriction.swift in Sources */,
+				8BCCD8D8057AEB6DC3C491FD /* PermitRoute.swift in Sources */,
+				95B262CAB0C16D53D98DCA0F /* PermitRouteStep.swift in Sources */,
+				46A70F0755FC49D8B8038578 /* PermitDetailedRoute.swift in Sources */,
+				DF932D7C7587435C97FE6951 /* RouteWaypoint.swift in Sources */,
+				54E9C09478CA420CA1852E37 /* MapMatch.swift in Sources */,
+				A9678510C5FD4D1F8DEF49BE /* RouteGeocodingHint.swift in Sources */,
+				2AF14E36550640889A64757C /* RouteGeocodingQuery.swift in Sources */,
+				E2A9A4BABAC44E1FA4118E54 /* RouteDetailState.swift in Sources */,
+				391561AC8ECD7DE0AA3ECFC3 /* PermitVehicle.swift in Sources */,
+				8F9D2A5B66788085153D0967 /* PermitFile.swift in Sources */,
+				9B3DB2ED69AF68334C946491 /* SummarizePermitRequest.swift in Sources */,
+				21EA20F4AEC54AFC941509CC /* LeadInRequest.swift in Sources */,
+				D12AAB1162B1438E9127DD73 /* PlaceQuery.swift in Sources */,
+				243F8F19C4B44BD584A30870 /* LeadInPoint.swift in Sources */,
+				E8FA764C18B142F396A1F568 /* MapCoordinate.swift in Sources */,
+				EE3F215545704BBA984D96FB /* PlacesRequest.swift in Sources */,
+				CBFA7EFA1DD3AA3DAF3D036B /* PermitSummary.swift in Sources */,
+				E0F9366D7282F730034D1F2E /* PermitSummaryAnswer.swift in Sources */,
+				25C1ABD535904680D9B71321 /* PermitSummaryChecks.swift in Sources */,
+				98702400F98A292766EA4DFA /* PermitSummaryContact.swift in Sources */,
+				0346A21CC2C629237D1398DF /* PermitSummaryCritical.swift in Sources */,
+				5F8F56CD149B48CCABBBFDD6 /* PermitSummaryEscort.swift in Sources */,
+				9FDD09D1E7454474D2CBC2DF /* PermitSummaryItem.swift in Sources */,
+				889FEA66546D7BB83A55CA4F /* PermitSummaryLoad.swift in Sources */,
+				B4215DC0A706EB575F380652 /* PermitSummaryResponse.swift in Sources */,
+				6E05B1977EA240CCA316692C /* PermitSummaryRestriction.swift in Sources */,
+				292B0EA1C1A5B841C213135D /* PermitSummaryRoute.swift in Sources */,
+				129082037E6445F0A8B0579C /* PermitRouteResponse.swift in Sources */,
+				81860A8000AE4B5FAF4E2A3D /* LeadInResponse.swift in Sources */,
+				3288C5DD703C4EBBAC460E78 /* PlacesResponse.swift in Sources */,
+				70FBF3B2BD73460BA32A5CC1 /* PlaceResult.swift in Sources */,
+				444B7A460B914863AD7EF938 /* PermitDetailedRouteStepSummary.swift in Sources */,
+				41F13CBA9DFA4B09B97DE4A7 /* PermitDetailedRouteSummary.swift in Sources */,
+				96F1812D1DC2A04636AE90B6 /* PermitSummaryRouteStep.swift in Sources */,
+				816698E1392C1BECE38C062C /* PermitSummaryVehicle.swift in Sources */,
+				3DF5BEFEED8D8A9EDE3A7BCF /* AppBackgroundView.swift in Sources */,
+				39E6247402BD82605C22CD4A /* PermitStatusBadge.swift in Sources */,
+				373FCE2C188307719CDF181D /* AppError.swift in Sources */,
+				D71DAA0B8EC3CFF6ADD87819 /* AppTab.swift in Sources */,
+				9CB5C3BEC8D634B754B977D5 /* AppText.swift in Sources */,
+				F0D89E0393B1BBBB109E70EF /* NetworkConstants.swift in Sources */,
+				053497CB2B8448669B742CC1 /* StateCenter.swift in Sources */,
+				B01B0FEA6A0444E3A8D878A3 /* Distance.swift in Sources */,
+				CC4743D32C43ADAFC1254E89 /* Secrets.swift in Sources */,
+				8B3B96DFCC94100D2F6C6A6E /* Date+Range.swift in Sources */,
+				D5757067B439C6BB0DDD1F70 /* Decoder+EnumRawValue.swift in Sources */,
+				D98955E0A83E8AC712177DA6 /* Double+Miles.swift in Sources */,
+				766F4C924BD53C489E13230B /* String+NilIfEmpty.swift in Sources */,
+				F6DE10E6DF3F858B73E29848 /* Color+Scheme.swift in Sources */,
+				D18B1E9803FE8BC10D473D01 /* View+Card.swift in Sources */,
 			);
 		};
 /* End PBXSourcesBuildPhase section */
@@ -528,7 +864,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -585,7 +921,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -602,18 +938,20 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W78FYLG72B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VezuOversize/Resources/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = VEZU;
+				INFOPLIST_KEY_CFBundleDisplayName = Vezu;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = NO;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -642,18 +980,20 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W78FYLG72B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VezuOversize/Resources/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = VEZU;
+				INFOPLIST_KEY_CFBundleDisplayName = Vezu;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = NO;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
