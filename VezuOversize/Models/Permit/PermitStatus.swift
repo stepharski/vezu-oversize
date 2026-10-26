@@ -16,7 +16,6 @@ enum PermitStatus: Hashable {
         }
     }
 
-    // List order: valid today, then upcoming, then expired.
     var sortRank: Int {
         switch self {
         case .active:

@@ -23,7 +23,6 @@ struct KeyRestrictionsCell: View {
                     row(for: restriction)
                 }
 
-                // Briefs saved before the critical answers existed list their escort rules here.
                 if critical == nil {
                     ForEach(escorts) { escort in
                         BriefIconRow(
@@ -39,7 +38,6 @@ struct KeyRestrictionsCell: View {
 }
 
 private extension KeyRestrictionsCell {
-    // Night travel and speed rules are already answered by the fixed rows at the top.
     var otherRestrictions: [PermitRestriction] {
         guard critical != nil else { return restrictions }
         return restrictions.filter { $0.kind != .nightTravel && $0.kind != .speed }
@@ -55,8 +53,6 @@ private extension KeyRestrictionsCell {
         criticalRow(for: critical.nightTravel, label: AppText.PermitBrief.nightTravel, systemImage: "moon.stars")
         criticalRow(for: critical.maxSpeed, label: AppText.PermitBrief.maxSpeed, systemImage: "gauge.with.needle")
 
-        // Escort rules carry the detail, so they replace the summary. A single rule reads
-        // like any other row's explanation; only a list of rules gets bullets.
         VStack(alignment: .leading, spacing: Design.escortRuleSpacing) {
             criticalRow(
                 for: critical.escorts,
@@ -136,6 +132,5 @@ private extension KeyRestrictionsCell {
 private enum Design {
     static let rowSpacing: CGFloat = 14
     static let escortRuleSpacing: CGFloat = 8
-    // Lines up with the row text: icon box (36) plus its spacing (12).
     static let escortRuleIndent: CGFloat = 48
 }

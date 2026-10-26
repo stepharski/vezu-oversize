@@ -13,7 +13,7 @@ struct PermitBriefView: View {
         .navigationTitle(brief.state)
         .navigationBarTitleDisplayMode(.large)
         .navigationDestination(isPresented: $viewModel.showsRoute) {
-            RouteDetailView(route: brief.route)
+            RouteDetailView(viewModel: viewModel.makeRouteViewModel())
         }
         .toolbar {
             if viewModel.canDelete {
@@ -48,7 +48,6 @@ private extension PermitBriefView {
                     viewModel.viewOriginalTapped()
                 }
 
-                // The new reading shows up in the permits list, like any import.
                 Button(AppText.PermitBrief.reload, systemImage: "arrow.clockwise") {
                     Task { await viewModel.reload() }
                     dismiss()

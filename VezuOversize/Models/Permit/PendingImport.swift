@@ -22,7 +22,6 @@ extension PendingImport {
         return error.rawValue
     }
 
-    // Reading a file that isn't a permit again won't change the answer.
     var canRetry: Bool {
         guard case .failed(let error) = state else { return false }
         return error != .notAPermit

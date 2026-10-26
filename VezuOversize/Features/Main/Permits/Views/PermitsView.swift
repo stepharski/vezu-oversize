@@ -50,6 +50,9 @@ struct PermitsView: View {
         .onChange(of: viewModel.importManager.lastImportedID) {
             Task { await viewModel.highlightImported() }
         }
+        .onChange(of: viewModel.importManager.lastSharedFileID) {
+            viewModel.sharedFileArrived()
+        }
     }
 }
 

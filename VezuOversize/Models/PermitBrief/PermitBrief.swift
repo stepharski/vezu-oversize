@@ -18,13 +18,11 @@ nonisolated struct PermitBrief: Identifiable, Hashable, Codable {
     let equipment: [PermitBriefItem]
     let documents: [PermitBriefItem]
     let contacts: [PermitContact]
-    // Optional so briefs saved before these fields existed still decode.
     var critical: PermitCriticalInfo?
     var reviewNotes: [String]?
 }
 
 nonisolated extension PermitBrief {
-    // A permit is active from the start of its first valid day through the end of its last.
     var status: PermitStatus {
         let calendar = Calendar.current
         let today = calendar.startOfDay(for: .now)

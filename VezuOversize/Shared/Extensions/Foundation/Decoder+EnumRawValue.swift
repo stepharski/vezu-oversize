@@ -1,7 +1,6 @@
 import Foundation
 
 nonisolated extension Decoder {
-    // Enums saved before they had String raw values were stored as {"caseName": {}}.
     func enumRawValue() throws -> String {
         if let value = try? singleValueContainer().decode(String.self) {
             return value

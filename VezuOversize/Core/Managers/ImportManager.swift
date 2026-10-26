@@ -5,21 +5,19 @@ import UIKit
 final class ImportManager {
     private(set) var pendingImports: [PendingImport] = []
     private(set) var lastImportedID: UUID?
+    private(set) var lastSharedFileID: UUID?
     private(set) var errorMessage: String?
     private(set) var errorTitle = AppText.PermitImport.errorTitle
-    // Saved permits being read again; their rows show "Reloading…" and can't be opened.
     private(set) var reloadingIDs: Set<UUID> = []
 
     private let permitManager: PermitManager
     private let permitService: PermitServicable
     private let fileService: PermitFileServicable
-    // Saved copies and their contents, kept until the read succeeds so Retry needs no re-pick.
     private var jobs: [UUID: ImportJob] = [:]
 
     private struct ImportJob {
         let fileNames: [String]
         let files: [PermitFile]
-        // Set for reloads: the record being replaced, which still owns the files.
         var replacingID: UUID?
     }
 
@@ -31,7 +29,11 @@ final class ImportManager {
         self.fileService = fileService
     }
 
-    // All files belong to one permit, e.g. the permit plus its condition sheets.
+    func importSharedPDF(at url: URL) async {
+        lastSharedFileID = UUID()
+        await importPDFs(at: [url])
+    }
+
     func importPDFs(at urls: [URL]) async {
         guard let firstURL = urls.first else { return }
 
@@ -63,7 +65,6 @@ final class ImportManager {
         }
     }
 
-    // Reads a saved permit again from its own PDF copies, e.g. after the reader improves.
     func reload(_ brief: PermitBrief) async {
         guard let recordID = permitManager.recordID(for: brief), !reloadingIDs.contains(recordID) else { return }
         let fileNames = permitManager.savedFileNames(for: brief)
@@ -103,7 +104,6 @@ final class ImportManager {
         guard let job = jobs[id] else { return }
         setState(.reading, for: id)
 
-        // Extra time from iOS so switching apps mid-read doesn't cancel the request.
         let backgroundTask = UIApplication.shared.beginBackgroundTask()
         defer { UIApplication.shared.endBackgroundTask(backgroundTask) }
 
@@ -115,7 +115,6 @@ final class ImportManager {
             lastImportedID = id
         } catch {
             if job.replacingID != nil {
-                // The saved permit is untouched, so a failed reload only needs a message.
                 jobs[id] = nil
                 handleFailure(error, title: AppText.PermitImport.reloadErrorTitle)
             } else {
@@ -148,7 +147,6 @@ final class ImportManager {
         return fileName
     }
 
-    // Files shared from other apps arrive in the Inbox folder; the saved copy replaces them.
     private func removeFromInbox(_ url: URL) {
         guard url.pathComponents.contains("Inbox") else { return }
         try? FileManager.default.removeItem(at: url)

@@ -17,8 +17,6 @@ final class PermitsViewModel {
         self.importManager = importManager
     }
 
-    // Valid today (ending soonest first), then upcoming (starting soonest first), then expired
-    // (most recently ended first). Ties keep the newest-added-first order of the records.
     var permits: [Permit] {
         let permits = permitManager.records.compactMap { record in
             record.brief.map { Permit(id: record.id, brief: $0) }
@@ -63,7 +61,6 @@ final class PermitsViewModel {
         isFilePickerPresented = true
     }
 
-    // Several files can be one permit with attachments or separate permits; only the driver knows.
     func filesPicked(_ result: Result<[URL], any Error>) async {
         guard case .success(let urls) = result, !urls.isEmpty else { return }
         guard urls.count > 1 else {
@@ -105,7 +102,10 @@ final class PermitsViewModel {
         importManager.remove(pendingImport)
     }
 
-    // Briefly outlines a newly read permit so the driver sees where it landed.
+    func sharedFileArrived() {
+        selectedBrief = nil
+    }
+
     func highlightImported() async {
         guard let id = importManager.lastImportedID else { return }
         highlightedPermitID = id

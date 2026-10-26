@@ -25,9 +25,8 @@ struct MainTabView: View {
 }
 
 private extension MainTabView {
-    // PDFs shared to VEZU from Mail, Files, or Telegram arrive here.
     func openSharedPDF(_ url: URL) {
         selectedTab = .permits
-        Task { await importManager.importPDFs(at: [url]) }
+        Task { await importManager.importSharedPDF(at: url) }
     }
 }

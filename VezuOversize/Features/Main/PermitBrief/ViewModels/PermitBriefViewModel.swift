@@ -8,10 +8,10 @@ final class PermitBriefViewModel {
     var previewURL: URL?
     private(set) var pdfURLs: [URL] = []
 
-    private let permitManager: PermitManager?
-    private let importManager: ImportManager?
+    private let permitManager: PermitManager
+    private let importManager: ImportManager
 
-    init(brief: PermitBrief, permitManager: PermitManager? = nil, importManager: ImportManager? = nil) {
+    init(brief: PermitBrief, permitManager: PermitManager, importManager: ImportManager) {
         self.brief = brief
         self.permitManager = permitManager
         self.importManager = importManager
@@ -30,23 +30,26 @@ final class PermitBriefViewModel {
     }
 
     var canDelete: Bool {
-        permitManager?.contains(brief) ?? false
+        permitManager.contains(brief)
     }
 
     var hasOriginal: Bool {
-        !(permitManager?.savedFileNames(for: brief).isEmpty ?? true)
+        !permitManager.savedFileNames(for: brief).isEmpty
     }
 
     func routeTapped() {
         showsRoute = true
     }
 
+    func makeRouteViewModel() -> RouteDetailViewModel {
+        RouteDetailViewModel(brief: brief, permitManager: permitManager)
+    }
+
     func viewOriginalTapped() {
-        pdfURLs = readableCopies(of: permitManager?.fileURLs(for: brief) ?? [])
+        pdfURLs = readableCopies(of: permitManager.fileURLs(for: brief))
         previewURL = pdfURLs.first
     }
 
-    // Saved copies have ID names; the viewer's title and Share use these readable ones instead.
     private func readableCopies(of urls: [URL]) -> [URL] {
         let folder = URL.temporaryDirectory.appending(path: "Preview", directoryHint: .isDirectory)
         try? FileManager.default.removeItem(at: folder)
@@ -61,16 +64,14 @@ final class PermitBriefViewModel {
     }
 
     func reload() async {
-        await importManager?.reload(brief)
+        await importManager.reload(brief)
     }
 
     func deleteTapped() {
         isDeleteConfirmationPresented = true
     }
 
-    // Returns true when the permit is gone and the screen should close.
     func deleteConfirmed() -> Bool {
-        guard let permitManager else { return false }
         do {
             try permitManager.delete(brief)
             return true

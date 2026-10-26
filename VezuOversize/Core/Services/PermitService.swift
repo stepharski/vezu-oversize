@@ -2,6 +2,7 @@ import Foundation
 
 protocol PermitServicable {
     func summarize(_ files: [PermitFile]) async throws -> PermitBrief
+    func detailedRoute(_ files: [PermitFile]) async throws -> PermitDetailedRouteSummary
 }
 
 struct PermitService {
@@ -19,14 +20,18 @@ extension PermitService: PermitServicable {
             responseModel: PermitSummaryResponse.self)
         return try brief(from: response)
     }
+
+    func detailedRoute(_ files: [PermitFile]) async throws -> PermitDetailedRouteSummary {
+        try await networkService.request(
+            .routePermit(request: SummarizePermitRequest(pdfs: files)),
+            responseModel: PermitRouteResponse.self
+        ).route
+    }
 }
 
-// The server sends empty strings and zeros for anything the permit doesn't state;
-// the app's model uses nil for those.
 private extension PermitService {
     func brief(from response: PermitSummaryResponse) throws -> PermitBrief {
         let summary = response.summary
-        // A reply with neither a state nor a permit number isn't a permit, whatever the server says.
         guard summary.stateCode.nilIfEmpty != nil || summary.number.nilIfEmpty != nil else {
             throw AppError.notAPermit
         }
@@ -59,7 +64,6 @@ private extension PermitService {
             reviewNotes: reviewNotes)
     }
 
-    // Dates arrive as MM/DD/YYYY, sometimes followed by a time or a note.
     func date(from text: String) -> Date? {
         guard let match = text.firstMatch(of: #/(\d{1,2})/(\d{1,2})/(\d{4}|\d{2})/#),
               let month = Int(match.1), let day = Int(match.2), var year = Int(match.3) else { return nil }
@@ -74,7 +78,6 @@ private extension PermitService {
     }
 
     func escortRule(from summary: PermitSummaryEscort) -> PermitEscortRule {
-        // A rule like "pilot car required" with no count still means at least one car.
         PermitEscortRule(
             count: max(summary.count, 1),
             position: summary.position,

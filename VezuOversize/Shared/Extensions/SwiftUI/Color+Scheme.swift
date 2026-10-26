@@ -12,6 +12,7 @@ extension Color {
 
     static let nearBlack = Color(hex: "0D0D0B")
     static let cardBlack = Color(hex: "121313")
+    static let sheetGray = Color(hex: "1C1D1F")
 
     static let statusGreen = Color(hex: "34D058")
 }

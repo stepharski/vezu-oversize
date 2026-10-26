@@ -40,7 +40,6 @@ enum AppText {
             "attachment-\(index).pdf"
         }
 
-
         static let groupingMessage = "Pick one permit if these are a permit and its condition sheets."
 
         static func groupingTitle(_ count: Int) -> String {
@@ -54,6 +53,10 @@ enum AppText {
         static func moreFiles(_ count: Int) -> String {
             count == 1 ? "+ 1 file" : "+ \(count) files"
         }
+    }
+
+    enum Info {
+        static let mapDataCredit = "Road data © OpenStreetMap contributors"
     }
 
     enum Common {
@@ -155,6 +158,37 @@ enum AppText {
 
         static func steps(_ count: Int) -> String {
             count == 1 ? "1 step" : "\(count) steps"
+        }
+
+        static let preparingNavigation = "Preparing navigation route…"
+        static let retry = "Try Again"
+        static let navigate = "Navigate"
+        static let openInGoogleMaps = "Open in Google Maps"
+
+        static func openPart(_ part: Int, of total: Int) -> String {
+            "Open Part \(part) of \(total)"
+        }
+
+        static func mapsParts(_ count: Int) -> String {
+            "Google Maps takes up to 9 stops per link, so this route opens in \(count) parts. Open the next part when you reach the end of one."
+        }
+
+        static let startsFromYourLocation = "Starts from your location"
+
+        static func driveToStartFirst(_ start: String) -> String {
+            "Drive to \(start) first"
+        }
+        static let navigationRiskTitle = "Not truck navigation"
+        static let navigationRiskMessage = "Google Maps doesn't know your load size and may reroute off the permit. Always drive the permitted roads."
+
+        static func waypoints(_ count: Int) -> String {
+            count == 1 ? "1 waypoint" : "\(count) waypoints"
+        }
+
+        static func unresolvedWaypoints(_ count: Int) -> String {
+            count == 1
+                ? "1 place couldn't be found on the map and is left out of the route."
+                : "\(count) places couldn't be found on the map and are left out of the route."
         }
     }
 }

@@ -6,6 +6,7 @@ struct VezuOversizeApp: App {
     private let container: ModelContainer
     @State private var permitManager: PermitManager
     @State private var importManager: ImportManager
+    @Environment(\.scenePhase) private var scenePhase
 
     init() {
         do {
@@ -24,5 +25,10 @@ struct VezuOversizeApp: App {
             MainTabView(permitManager: permitManager, importManager: importManager)
         }
         .modelContainer(container)
+        .onChange(of: scenePhase) { _, phase in
+            if phase == .active {
+                permitManager.deleteOldExpiredPermits()
+            }
+        }
     }
 }

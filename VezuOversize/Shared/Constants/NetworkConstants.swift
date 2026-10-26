@@ -2,11 +2,13 @@ import Foundation
 
 enum NetworkConstants {
     static let baseURL = "https://vezu-permits.stepharski.workers.dev"
-    // Reading a permit takes 10–60 seconds, longer when the server double-checks it.
     static let requestTimeout: TimeInterval = 120
 
     enum Path {
         static let summarizePermit = "/"
+        static let routePermit = "/route"
+        static let leadIns = "/leadins"
+        static let places = "/places"
     }
 
     enum HeaderKey {

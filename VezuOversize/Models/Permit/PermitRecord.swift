@@ -9,6 +9,7 @@ final class PermitRecord {
     var pdfFileName: String
     var attachmentFileNames: [String] = []
     var briefData: Data
+    var detailedRouteData: Data?
 
     init(id: UUID, pdfFileNames: [String], brief: PermitBrief) throws {
         self.id = id
@@ -20,5 +21,9 @@ final class PermitRecord {
 
     var brief: PermitBrief? {
         try? JSONDecoder().decode(PermitBrief.self, from: briefData)
+    }
+
+    var detailedRoute: PermitDetailedRoute? {
+        detailedRouteData.flatMap { try? JSONDecoder().decode(PermitDetailedRoute.self, from: $0) }
     }
 }
