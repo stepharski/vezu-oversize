@@ -43,9 +43,11 @@ private extension PermitStatusBadge {
     }
 }
 
-private enum Design {
-    static let spacing: CGFloat = 6
-    static let dotSize: CGFloat = 8
-    static let horizontalPadding: CGFloat = 10
-    static let verticalPadding: CGFloat = 6
+private extension PermitStatusBadge {
+    enum Design {
+        static let spacing: CGFloat = 6
+        static let dotSize: CGFloat = 8
+        static let horizontalPadding: CGFloat = 10
+        static let verticalPadding: CGFloat = 6
+    }
 }

@@ -21,7 +21,6 @@ final class PermitRecord {
         self.translationData = try translation.map { try JSONEncoder().encode($0) }
     }
 
-    // The translated brief while the app is in the language it was translated into, otherwise English.
     var brief: PermitBrief? {
         if let translation, translation.language == Bundle.main.languageCode {
             return translation.brief

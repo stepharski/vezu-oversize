@@ -104,21 +104,36 @@ enum AppText {
         static let carryMessage = String(localized: "Keep the permit and its required documents with you on every trip.")
 
         static let privacyTitle = String(localized: "Your privacy")
-        static let privacySubtitle = String(localized: "Permits stay on this phone. Nothing is kept on the server.")
+        static let privacySubtitle = String(localized: "Permits are saved on this phone. The VEZU server doesn't keep them.")
         static let onPhoneTitle = String(localized: "Stored on this phone")
         static let onPhoneMessage = String(localized: "Your permits, their PDFs, and routes are saved only on this phone.")
         static let notKeptTitle = String(localized: "Read, not kept")
-        static let notKeptMessage = String(localized: "PDFs are sent to the VEZU server and read by Claude, an AI by Anthropic. Nothing is stored there.")
+        static let notKeptMessage = String(localized: "PDFs are sent to the VEZU server and read by Claude, an AI by Anthropic. VEZU doesn't keep them. Anthropic deletes them within 30 days and doesn't train AI on them.")
         static let cleanupTitle = String(localized: "Expired permits are removed")
         static let cleanupMessage = String(localized: "They're deleted from this phone 30 days after they expire.")
 
         static let mapDataCredit = String(localized: "Road data © OpenStreetMap contributors")
         static let stateBordersCredit = String(localized: "State borders: US Census Bureau")
         static let copyright = "© 2026 Stepan Kukharskyi"
+        static let privacyPolicy = String(localized: "Privacy Policy")
 
         static func version(_ version: String) -> String {
             "VEZU Oversize \(version)"
         }
+    }
+
+    enum AIConsent {
+        static let title = String(localized: "Before VEZU reads your permit")
+        static let subtitle = String(localized: "VEZU uses AI to turn your permit PDF into a brief and a route.")
+        static let sentTitle = String(localized: "What is sent")
+        static let sentMessage = String(localized: "The PDFs you add, with everything on them: names, phone numbers, vehicle details, and the route.")
+        static let readerTitle = String(localized: "Who reads it")
+        static let readerMessage = String(localized: "The VEZU server passes the PDFs to Claude, an AI by Anthropic, which writes the brief and the route.")
+        static let keptTitle = String(localized: "How long it's kept")
+        static let keptMessage = String(localized: "VEZU doesn't keep your PDFs on its server. Anthropic deletes them within 30 days and doesn't train AI on them.")
+        static let privacyPolicy = String(localized: "Privacy Policy")
+        static let agree = String(localized: "Agree and Continue")
+        static let notNow = String(localized: "Not Now")
     }
 
     enum Common {

@@ -9,7 +9,6 @@ nonisolated struct PermitDetailedRoute: Hashable, Codable {
         waypoints.filter(\.isResolved)
     }
 
-    // The route with step instructions in the app's language when they were translated into it.
     var localized: PermitDetailedRoute {
         guard let translation,
               translation.language == Bundle.main.languageCode,
@@ -17,7 +16,12 @@ nonisolated struct PermitDetailedRoute: Hashable, Codable {
         else { return self }
 
         let steps = zip(route.steps, translation.instructions).map { step, instruction in
-            PermitRouteStep(id: step.id, road: step.road, instruction: instruction, miles: step.miles, isToll: step.isToll)
+            PermitRouteStep(
+                id: step.id,
+                road: step.road,
+                instruction: instruction,
+                miles: step.miles,
+                isToll: step.isToll)
         }
         let localizedRoute = PermitRoute(
             origin: route.origin,

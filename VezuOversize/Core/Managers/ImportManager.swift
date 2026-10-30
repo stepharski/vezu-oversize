@@ -15,12 +15,6 @@ final class ImportManager {
     private let fileService: PermitFileServicable
     private var jobs: [UUID: ImportJob] = [:]
 
-    private struct ImportJob {
-        let fileNames: [String]
-        let files: [PermitFile]
-        var replacingID: UUID?
-    }
-
     init(permitManager: PermitManager,
          permitService: PermitServicable = PermitService(),
          fileService: PermitFileServicable = PermitFileService()) {
@@ -72,9 +66,10 @@ final class ImportManager {
         do {
             guard !fileNames.isEmpty else { throw AppError.unreadableFile }
             let files = try fileNames.enumerated().map { index, fileName in
-                PermitFile(
-                    name: index == 0 ? AppText.PermitImport.permitFileName : AppText.PermitImport.attachmentFileName(index),
-                    base64: try fileService.data(for: fileName).base64EncodedString())
+                let name = index == 0
+                    ? AppText.PermitImport.permitFileName
+                    : AppText.PermitImport.attachmentFileName(index)
+                return PermitFile(name: name, base64: try fileService.data(for: fileName).base64EncodedString())
             }
 
             let id = UUID()
@@ -109,8 +104,12 @@ final class ImportManager {
 
         do {
             let (brief, translation) = try await permitService.summarize(job.files)
-            try permitManager.add(brief, translation: translation, id: id, pdfFileNames: job.fileNames,
-                                  replacing: job.replacingID)
+            try permitManager.add(
+                brief,
+                translation: translation,
+                id: id,
+                pdfFileNames: job.fileNames,
+                replacing: job.replacingID)
             jobs[id] = nil
             pendingImports.removeAll { $0.id == id }
             lastImportedID = id
@@ -156,5 +155,13 @@ final class ImportManager {
     private func handleFailure(_ error: Error, title: String = AppText.PermitImport.errorTitle) {
         errorTitle = title
         errorMessage = (error as? AppError ?? .unreadableFile).message
+    }
+}
+
+private extension ImportManager {
+    struct ImportJob {
+        let fileNames: [String]
+        let files: [PermitFile]
+        var replacingID: UUID?
     }
 }

@@ -1,6 +1,6 @@
 import Foundation
 
-nonisolated struct LeadInPoint: Encodable, Equatable, Sendable {
+struct LeadInPoint: Encodable, Equatable {
     let lat: Double
     let lon: Double
     let road: String

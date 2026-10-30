@@ -555,6 +555,22 @@
         }
       }
     },
+    "Agree and Continue" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aceptar y continuar"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Погодитися й продовжити"
+          }
+        }
+      }
+    },
     "Alerts" : {
       "localizations" : {
         "es" : {
@@ -679,6 +695,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Тримайся праворуч на з'їзд на I-80"
+          }
+        }
+      }
+    },
+    "Before VEZU reads your permit" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Antes de que VEZU lea tu permiso"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Перш ніж VEZU прочитає ваш перміт"
           }
         }
       }
@@ -1271,6 +1303,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Обмеження у святкові дні"
+          }
+        }
+      }
+    },
+    "How long it's kept" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cuánto tiempo se guarda"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Як довго зберігається"
           }
         }
       }
@@ -1873,6 +1921,22 @@
         }
       }
     },
+    "Not Now" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ahora no"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не зараз"
+          }
+        }
+      }
+    },
     "Not a permit" : {
       "localizations" : {
         "es" : {
@@ -2145,18 +2209,18 @@
         }
       }
     },
-    "PDFs are sent to the VEZU server and read by Claude, an AI by Anthropic. Nothing is stored there." : {
+    "PDFs are sent to the VEZU server and read by Claude, an AI by Anthropic. VEZU doesn't keep them. Anthropic deletes them within 30 days and doesn't train AI on them." : {
       "localizations" : {
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Los PDF se envían al servidor de VEZU y los lee Claude, una IA de Anthropic. Allí no se guarda nada."
+            "value" : "Los PDF se envían al servidor de VEZU y los lee Claude, una IA de Anthropic. VEZU no los guarda. Anthropic los borra en 30 días y no entrena IA con ellos."
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "PDF надсилаються на сервер VEZU, і їх читає Claude — ШІ від Anthropic. Там нічого не зберігається."
+            "value" : "PDF надсилаються на сервер VEZU, і їх читає Claude — ШІ від Anthropic. VEZU їх не зберігає. Anthropic видаляє їх протягом 30 днів і не навчає на них ШІ."
           }
         }
       }
@@ -2257,18 +2321,18 @@
         }
       }
     },
-    "Permits stay on this phone. Nothing is kept on the server." : {
+    "Permits are saved on this phone. The VEZU server doesn't keep them." : {
       "localizations" : {
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Los permisos se quedan en este teléfono. El servidor no guarda nada."
+            "value" : "Los permisos se guardan en este teléfono. El servidor de VEZU no los guarda."
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Перміти залишаються на цьому телефоні. Сервер нічого не зберігає."
+            "value" : "Перміти зберігаються на цьому телефоні. Сервер VEZU їх не зберігає."
           }
         }
       }
@@ -2349,6 +2413,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Готуємо маршрут для навігації…"
+          }
+        }
+      }
+    },
+    "Privacy Policy" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Política de privacidad"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Політика конфіденційності"
           }
         }
       }
@@ -2801,6 +2881,38 @@
         }
       }
     },
+    "The PDFs you add, with everything on them: names, phone numbers, vehicle details, and the route." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Los PDF que agregas, con todo lo que contienen: nombres, teléfonos, datos del vehículo y la ruta."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PDF, які ви додаєте, з усім, що в них є: імена, номери телефонів, дані транспорту й маршрут."
+          }
+        }
+      }
+    },
+    "The VEZU server passes the PDFs to Claude, an AI by Anthropic, which writes the brief and the route." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El servidor de VEZU pasa los PDF a Claude, una IA de Anthropic, que escribe el resumen y la ruta."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сервер VEZU передає PDF Claude — ШІ від Anthropic, — який складає огляд і маршрут."
+          }
+        }
+      }
+    },
     "The data received from server is invalid. Please try again." : {
       "localizations" : {
         "es" : {
@@ -3105,6 +3217,22 @@
         }
       }
     },
+    "VEZU doesn't keep your PDFs on its server. Anthropic deletes them within 30 days and doesn't train AI on them." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VEZU no guarda tus PDF en su servidor. Anthropic los borra en 30 días y no entrena IA con ellos."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VEZU не зберігає ваші PDF на своєму сервері. Anthropic видаляє їх протягом 30 днів і не навчає на них ШІ."
+          }
+        }
+      }
+    },
     "VEZU places the stops on the map and opens them in Google Maps." : {
       "localizations" : {
         "es" : {
@@ -3117,6 +3245,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "VEZU розставляє зупинки на мапі й відкриває їх у Google Maps."
+          }
+        }
+      }
+    },
+    "VEZU uses AI to turn your permit PDF into a brief and a route." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VEZU usa IA para convertir el PDF de tu permiso en un resumen y una ruta."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VEZU використовує ШІ, щоб перетворити PDF перміту на короткий огляд і маршрут."
           }
         }
       }
@@ -3213,6 +3357,38 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Попередження з перміту, які не можна пропустити."
+          }
+        }
+      }
+    },
+    "What is sent" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Qué se envía"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Що надсилається"
+          }
+        }
+      }
+    },
+    "Who reads it" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quién lo lee"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Хто їх читає"
           }
         }
       }
