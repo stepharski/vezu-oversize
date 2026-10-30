@@ -19,7 +19,7 @@ extension PendingImport {
 
     var errorMessage: String? {
         guard case .failed(let error) = state else { return nil }
-        return error.rawValue
+        return error.message
     }
 
     var canRetry: Bool {

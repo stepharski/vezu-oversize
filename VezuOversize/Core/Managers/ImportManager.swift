@@ -108,8 +108,9 @@ final class ImportManager {
         defer { UIApplication.shared.endBackgroundTask(backgroundTask) }
 
         do {
-            let brief = try await permitService.summarize(job.files)
-            try permitManager.add(brief, id: id, pdfFileNames: job.fileNames, replacing: job.replacingID)
+            let (brief, translation) = try await permitService.summarize(job.files)
+            try permitManager.add(brief, translation: translation, id: id, pdfFileNames: job.fileNames,
+                                  replacing: job.replacingID)
             jobs[id] = nil
             pendingImports.removeAll { $0.id == id }
             lastImportedID = id
@@ -154,6 +155,6 @@ final class ImportManager {
 
     private func handleFailure(_ error: Error, title: String = AppText.PermitImport.errorTitle) {
         errorTitle = title
-        errorMessage = (error as? AppError ?? .unreadableFile).rawValue
+        errorMessage = (error as? AppError ?? .unreadableFile).message
     }
 }

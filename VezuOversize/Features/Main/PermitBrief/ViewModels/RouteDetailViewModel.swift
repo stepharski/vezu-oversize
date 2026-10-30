@@ -40,7 +40,7 @@ final class RouteDetailViewModel {
             detailedRoute = try await permitManager.detailedRoute(for: brief)
             detailState = .ready
         } catch {
-            detailState = .failed((error as? AppError)?.rawValue ?? AppError.invalidResponse.rawValue)
+            detailState = .failed((error as? AppError ?? .invalidResponse).message)
         }
     }
 

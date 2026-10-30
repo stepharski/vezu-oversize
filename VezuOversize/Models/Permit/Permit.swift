@@ -15,7 +15,7 @@ extension Permit {
     init(id: UUID, brief: PermitBrief) {
         self.init(
             id: id,
-            title: "\(brief.state) Oversize",
+            title: brief.state,
             stateCode: brief.stateCode,
             number: brief.number,
             loadDescription: brief.load.description,
