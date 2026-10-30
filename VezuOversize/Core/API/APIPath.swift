@@ -36,11 +36,11 @@ enum APIPath: Equatable {
 
     var body: (any Encodable)? {
         switch self {
-        case let .summarizePermit(request), let .routePermit(request):
+        case .summarizePermit(let request), .routePermit(let request):
             return request
-        case let .leadIns(request):
+        case .leadIns(let request):
             return request
-        case let .places(request):
+        case .places(let request):
             return request
         }
     }

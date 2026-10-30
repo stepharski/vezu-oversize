@@ -1,6 +1,6 @@
 import Foundation
 
-nonisolated struct RouteGeocodingHint: Hashable, Sendable {
+struct RouteGeocodingHint: Hashable {
     let latitude: Double
     let longitude: Double
 

@@ -4,23 +4,24 @@ import SwiftData
 @Observable
 final class PermitManager {
     private(set) var records: [PermitRecord] = []
+
     private let context: ModelContext
     private let fileService: PermitFileServicable
     private let permitService: PermitServicable
     private let geocodingService: RouteGeocodingServicable
-    private let junctionShifter: RouteJunctionShifting
+    private let junctionService: RouteJunctionServicable
     private let daysKeptAfterExpiry = 30
 
     init(context: ModelContext,
          fileService: PermitFileServicable = PermitFileService(),
          permitService: PermitServicable = PermitService(),
          geocodingService: RouteGeocodingServicable = RouteGeocodingService(),
-         junctionShifter: RouteJunctionShifting = RouteJunctionShifter()) {
+         junctionService: RouteJunctionServicable = RouteJunctionService()) {
         self.context = context
         self.fileService = fileService
         self.permitService = permitService
         self.geocodingService = geocodingService
-        self.junctionShifter = junctionShifter
+        self.junctionService = junctionService
         reload()
         deleteOldExpiredPermits()
     }
@@ -29,9 +30,14 @@ final class PermitManager {
         let calendar = Calendar.current
         let old = records.filter { record in
             guard let brief = record.brief,
-                  let endOfLastDay = calendar.date(byAdding: .day, value: 1, to: calendar.startOfDay(for: brief.validTo)),
-                  let keepUntil = calendar.date(byAdding: .day, value: daysKeptAfterExpiry, to: max(endOfLastDay, record.createdAt))
-            else { return false }
+                  let endOfLastDay = calendar.date(
+                    byAdding: .day,
+                    value: 1,
+                    to: calendar.startOfDay(for: brief.validTo)),
+                  let keepUntil = calendar.date(
+                    byAdding: .day,
+                    value: daysKeptAfterExpiry,
+                    to: max(endOfLastDay, record.createdAt)) else { return false }
             return now > keepUntil
         }
         guard !old.isEmpty else { return }
@@ -43,14 +49,18 @@ final class PermitManager {
         reload()
     }
 
-    func add(_ brief: PermitBrief, id: UUID, pdfFileNames: [String], replacing replacedID: UUID? = nil) throws {
+    func add(_ brief: PermitBrief,
+             translation: PermitBriefTranslation?,
+             id: UUID,
+             pdfFileNames: [String],
+             replacing replacedID: UUID? = nil) throws {
         let duplicates = records.filter { record in
             record.id == replacedID || (record.brief.map { isSamePermit($0, brief) } ?? false)
         }
         let replacedFileNames = duplicates.flatMap(fileNames).filter { !pdfFileNames.contains($0) }
         duplicates.forEach(context.delete)
 
-        context.insert(try PermitRecord(id: id, pdfFileNames: pdfFileNames, brief: brief))
+        context.insert(try PermitRecord(id: id, pdfFileNames: pdfFileNames, brief: brief, translation: translation))
         try context.save()
         replacedFileNames.forEach(fileService.delete)
         reload()
@@ -81,7 +91,8 @@ final class PermitManager {
     func savedFileNames(for brief: PermitBrief) -> [String] {
         guard let record = record(for: brief) else { return [] }
         return fileNames(of: record).filter { fileName in
-            (try? fileService.url(for: fileName)).map { FileManager.default.fileExists(atPath: $0.path(percentEncoded: false)) } ?? false
+            guard let url = try? fileService.url(for: fileName) else { return false }
+            return FileManager.default.fileExists(atPath: url.path(percentEncoded: false))
         }
     }
 
@@ -92,18 +103,20 @@ final class PermitManager {
     func detailedRoute(for brief: PermitBrief) async throws -> PermitDetailedRoute {
         guard let record = record(for: brief) else { throw AppError.unreadableFile }
         if let saved = record.detailedRoute {
-            return saved
+            return saved.localized
         }
 
         let fileNames = savedFileNames(for: brief)
         guard !fileNames.isEmpty else { throw AppError.unreadableFile }
         let files = try fileNames.enumerated().map { index, fileName in
-            PermitFile(
-                name: index == 0 ? AppText.PermitImport.permitFileName : AppText.PermitImport.attachmentFileName(index),
-                base64: try fileService.data(for: fileName).base64EncodedString())
+            let name = index == 0
+                ? AppText.PermitImport.permitFileName
+                : AppText.PermitImport.attachmentFileName(index)
+            return PermitFile(name: name, base64: try fileService.data(for: fileName).base64EncodedString())
         }
 
-        let summary = try await permitService.detailedRoute(files)
+        let response = try await permitService.detailedRoute(files)
+        let summary = response.route
         let route = PermitRoute(
             origin: summary.origin.nilIfEmpty ?? brief.route.origin,
             destination: summary.destination.nilIfEmpty ?? brief.route.destination,
@@ -114,14 +127,14 @@ final class PermitManager {
             })
         let queries = queries(for: route, summary: summary)
         let found = await geocodingService.waypoints(for: queries, in: brief.stateCode.nilIfEmpty)
-        let waypoints = await junctionShifter.shifted(found, queries: queries)
-        let detailedRoute = PermitDetailedRoute(route: route, waypoints: waypoints)
+        let waypoints = await junctionService.shifted(found, queries: queries)
+        let detailedRoute = PermitDetailedRoute(route: route, waypoints: waypoints, translation: response.translation)
 
         if let current = self.record(for: brief) {
             current.detailedRouteData = try JSONEncoder().encode(detailedRoute)
             try context.save()
         }
-        return detailedRoute
+        return detailedRoute.localized
     }
 
     func delete(_ brief: PermitBrief) throws {

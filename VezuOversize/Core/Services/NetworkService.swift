@@ -85,6 +85,8 @@ extension NetworkService: NetworkServicable {
     }
 }
 
-private struct ErrorResponse: Decodable {
-    let error: String
+private extension NetworkService {
+    struct ErrorResponse: Decodable {
+        let error: String
+    }
 }

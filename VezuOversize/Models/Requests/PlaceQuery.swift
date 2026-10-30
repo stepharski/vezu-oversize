@@ -1,6 +1,6 @@
 import Foundation
 
-nonisolated struct PlaceQuery: Encodable, Equatable, Sendable {
+struct PlaceQuery: Encodable, Equatable {
     let place: String
     let hint: MapCoordinate?
     let isStateLine: Bool

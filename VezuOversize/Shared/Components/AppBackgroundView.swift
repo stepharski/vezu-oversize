@@ -20,8 +20,10 @@ private extension AppBackgroundView {
     }
 }
 
-private enum Design {
-    static let offset: CGFloat = 75
-    static let circleSize: CGFloat = 200
-    static let blurRadius: CGFloat = 100
+private extension AppBackgroundView {
+    enum Design {
+        static let offset: CGFloat = 75
+        static let circleSize: CGFloat = 200
+        static let blurRadius: CGFloat = 100
+    }
 }

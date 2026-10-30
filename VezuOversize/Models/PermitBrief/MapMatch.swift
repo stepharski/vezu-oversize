@@ -1,6 +1,6 @@
 import CoreLocation
 
-nonisolated struct MapMatch {
+struct MapMatch {
     let coordinate: CLLocationCoordinate2D
     let state: String?
     let text: String

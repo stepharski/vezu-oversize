@@ -1,6 +1,6 @@
 import Foundation
 
-nonisolated struct RouteGeocodingQuery: Hashable, Sendable {
+struct RouteGeocodingQuery: Hashable {
     let place: String
     var miles: Double = 0
     var hint: RouteGeocodingHint?

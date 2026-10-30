@@ -1,6 +1,6 @@
 import Foundation
 
-nonisolated struct PlacesRequest: Encodable, Equatable, Sendable {
+struct PlacesRequest: Encodable, Equatable {
     let state: String?
     let places: [PlaceQuery]
 }

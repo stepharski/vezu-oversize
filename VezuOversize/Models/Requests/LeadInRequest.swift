@@ -1,5 +1,5 @@
 import Foundation
 
-nonisolated struct LeadInRequest: Encodable, Equatable, Sendable {
+struct LeadInRequest: Encodable, Equatable {
     let points: [LeadInPoint]
 }

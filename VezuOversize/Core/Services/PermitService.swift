@@ -1,8 +1,8 @@
 import Foundation
 
 protocol PermitServicable {
-    func summarize(_ files: [PermitFile]) async throws -> PermitBrief
-    func detailedRoute(_ files: [PermitFile]) async throws -> PermitDetailedRouteSummary
+    func summarize(_ files: [PermitFile]) async throws -> (brief: PermitBrief, translation: PermitBriefTranslation?)
+    func detailedRoute(_ files: [PermitFile]) async throws -> PermitRouteResponse
 }
 
 struct PermitService {
@@ -14,28 +14,34 @@ struct PermitService {
 }
 
 extension PermitService: PermitServicable {
-    func summarize(_ files: [PermitFile]) async throws -> PermitBrief {
+    func summarize(_ files: [PermitFile]) async throws -> (brief: PermitBrief, translation: PermitBriefTranslation?) {
         let response = try await networkService.request(
             .summarizePermit(request: SummarizePermitRequest(pdfs: files)),
             responseModel: PermitSummaryResponse.self)
-        return try brief(from: response)
+        let english = try brief(from: response.summary, checks: response.checks)
+
+        // The translation shares the English brief's id, so both find the same saved permit.
+        let translation = response.translation.flatMap { translation -> PermitBriefTranslation? in
+            guard var translated = try? brief(from: translation.summary, checks: response.checks) else { return nil }
+            translated.id = english.id
+            return PermitBriefTranslation(language: translation.language, brief: translated)
+        }
+        return (english, translation)
     }
 
-    func detailedRoute(_ files: [PermitFile]) async throws -> PermitDetailedRouteSummary {
+    func detailedRoute(_ files: [PermitFile]) async throws -> PermitRouteResponse {
         try await networkService.request(
             .routePermit(request: SummarizePermitRequest(pdfs: files)),
-            responseModel: PermitRouteResponse.self
-        ).route
+            responseModel: PermitRouteResponse.self)
     }
 }
 
 private extension PermitService {
-    func brief(from response: PermitSummaryResponse) throws -> PermitBrief {
-        let summary = response.summary
+    func brief(from summary: PermitSummary, checks: PermitSummaryChecks?) throws -> PermitBrief {
         guard summary.stateCode.nilIfEmpty != nil || summary.number.nilIfEmpty != nil else {
             throw AppError.notAPermit
         }
-        var reviewNotes = response.checks?.problems ?? []
+        var reviewNotes = checks?.problems ?? []
 
         let validFrom = date(from: summary.validFrom)
         let validTo = date(from: summary.validTo)
